@@ -1,0 +1,36 @@
+[
+  
+  {
+    "title"    : "Заглавные миниатюры",
+    "category" : "",
+    "tags"     : "иконки, эскизы, изображения, jekyll",
+    "url"      : "/jekyll/2017/04/04/using-thumbnails/",
+    "date"     : "2017-04-04 22:17:18 +0300"
+    } ,
+    
+  {
+    "title"    : "Чёрная Карта",
+    "category" : "",
+    "tags"     : "дизайн, статика, carte, noire",
+    "url"      : "/jekyll/2017/02/01/welcome-to-carte-noir/",
+    "date"     : "2017-02-01 18:31:19 +0300"
+    } ,
+    
+  {
+    "title"    : "О Jekyll",
+    "category" : "",
+    "tags"     : "технологии, jekyll",
+    "url"      : "/jekyll/2017/01/09/about-jekyll/",
+    "date"     : "2017-01-09 15:32:18 +0300"
+    } ,
+    
+  {
+    "title"    : "Играем мышцами в этом шаблоне",
+    "category" : "",
+    "tags"     : "demo, возможности, шаблон",
+    "url"      : "/jekyll/2014/06/10/carte-noire-in-action/",
+    "date"     : "2014-06-10 15:31:19 +0300"
+    } 
+    
+  ]
+
