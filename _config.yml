@@ -27,7 +27,7 @@ xing_link:
 facebook_link: https://www.facebook.com/profile.php?id=100012300218634
 
 # Footer
-footer_left: "Сделано с <i class=\"fa fa-heart\"></i> на <a href=\"https://jekyllrb.com/\">Jekyll</a>"
+footer_left: "Сделано с <i class=\"fa fa-heart\"></i> на <a href=\"https://jekyllrb.com/\"> Jekyll </a>"
 footer_right: "&lt; <a href=\"https://github.com/klimov-rv/klimov-rv.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i> /&gt;"
 
 # Build settings
