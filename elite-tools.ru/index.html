@@ -15,8 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 
-  <link rel="shortcut icon"
-    href="../assets/favicon.ico"> 
+  <link rel="shortcut icon" href="assets/favicon.ico"> 
 
 
   <!-- fixes -->
@@ -28,28 +27,28 @@
 
 
   <link rel="stylesheet" type="text/css"
-    href="../assets/normalise.css">
+    href="assets/normalise.css">
   <link rel="stylesheet" type="text/css"
-    href="../assets/font-awesome.all.min.css" />
+    href="assets/font-awesome.all.min.css" />
   <link rel="stylesheet" type="text/css"
-    href="../assets/fonts.css">
+    href="assets/fonts.css">
   <link rel="stylesheet" type="text/css"
-    href="../assets/plugins.css">
+    href="assets/plugins.css">
   <link rel="stylesheet" type="text/css"
-    href="../assets/spider.css">
+    href="assets/spider.css">
   <link rel="stylesheet" type="text/css"
-    href="../assets/theme.css">
+    href="assets/theme.css">
   <link rel="stylesheet" type="text/css"
-    href="../assets/aos.css" />
+    href="assets/aos.css" />
   <link rel="stylesheet" type="text/css"
-    href="../assets/elite.css">
+    href="assets/elite.css">
   <link type="text/css" rel="stylesheet"
-    href="../assets/mmenu-light.css" />
+    href="assets/mmenu-light.css" />
   <link type="text/css" rel="stylesheet"
-    href="../assets/catalog-menu-component.css" />
+    href="assets/catalog-menu-component.css" />
 
   <link rel="stylesheet" type="text/css"
-    href="../assets/responsive.css">
+    href="assets/responsive.css">
 </head>
 
 
@@ -58,36 +57,21 @@
 
 <body class="template-is-index is-index-page">
   <div id="page">
-    <div class="header-wrapper"> 
+    <header class="header-wrapper"> 
 
-      <header class="eliteHeader">
+      <div class="eliteHeader">  
         <div class="container">
           <div class="row flex-top">
 
             <a class="burger-mobile hide show-sm cell-1-sm" href="#menu"><span></span>
             </a>
-            <div class="eliteHeader__side eliteHeader__side_left cell-4"> 
+            <div class="eliteHeader__side eliteHeader__side_left cell-4 hide-sm"> 
               <div class="header_side_links__wrap cell-12">
-                <div class="header_side_link"><a href="/">О нас</a></div>
-                <div class="header_side_link"><a href="/">Продукция</a></div>
-                <div class="header_side_link"><a href="/">Прайс-лист</a></div>
+                <div class="header_side_link"><a href="catalog.html">Каталог</a></div>
+                <div class="header_side_link"><a href="tovar.html">Товар</a></div>
+                <div class="header_side_link"><a href="about.html">О нас</a></div>
               </div>  
-            </div>
-            
-            <div class="cell-4 inline-middle flex-center"> 
-              <a href="index.html" class="eliteHeader__logo "  title="Компания Элит-Инструмент">
-                <img src="../images/logo-elite.svg" alt="Компания Элит-Инструмент">
-              </a>
-            </div>
-
-            <div class="eliteHeader__side eliteHeader__side_left cell-4 container">
               
-              <div class="header_side_links__wrap cell-12">
-                <div class="header_side_link"><a href="/">Контакты</a></div>
-                <div class="header_side_link"><a href="/">Акции</a></div>
-                <div class="header_side_link"><a href="/">Кабинет</a></div>
-              </div> 
-
               <div class="header_side__block cell-6">
                 <span>Розничный магазин:</span> 
                 <div class="link-tel__wrap">
@@ -100,6 +84,26 @@
                   <i class="fas fa-phone"></i>
                 </div>
               </div>
+  
+            </div>
+            
+            <div class="cell-4 cell-10-sm inline-middle flex-center"> 
+              <a href="index.html" class="eliteHeader__logo hide-sm"  title="Компания Элит-Инструмент">
+                <img src="assets/logo-elite.svg" alt="Компания Элит-Инструмент">
+              </a>
+              <a class="logo-text-only hide show-flex-sm flex-center flex-middle" href="">
+                <img alt="Компания Элит-Инструмент" src="assets/logo-text-only.svg">
+              </a>
+            </div>
+  
+            <div class="eliteHeader__side eliteHeader__side_left cell-4 hide-sm container">
+              
+              <div class="header_side_links__wrap cell-12">
+                <div class="header_side_link"><a href="catalog.html">Каталог</a></div>
+                <div class="header_side_link"><a href="tovar.html">Товар</a></div>
+                <div class="header_side_link"><a href="about.html">О нас</a></div>
+              </div> 
+  
               <div class="header_side__block cell-6">
                 <span>Время работы:</span> 
                 <div class="clock-info__wrap">
@@ -110,521 +114,449 @@
                   <i class="fas fa-clock"></i>
                 </div>
               </div>
-
+  
               
-
+  
             </div>
           </div>
+          <div class="cell-2 cell-3-md hide-sm logo-icon-only"> 
+          </div> 
         </div>
-        <div class="eliteHeader__mainnav no-mobile hide-sm">
-          <div class="container">
-            <nav class="row is-grid">
-              <div id="dl-menu" class="cell-2 cell-3-md dl-menuwrapper">
-
-                <button class="dl-trigger"><i class="burger-icon"></i><i
-                    class="close-icon"></i>
-                    <i class="close"></i> <b>Все каталоги</b> </button>
-                <ul class="subcatalog dl-menu">
-
-
-                  <li class="subcatalog__item">
-                    <a href="collection/kotly-otoplenija.html">Котлы
-                      отопления</a>
-
-                    <ul class="dl-submenu">
-
-                      <li class="subcatalog__item">
-                        <a href="collection/gazovye-kotly.html">Газовые
-                          котлы</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/elektricheskie-kotly.html">Электрические
-                          котлы</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/%d1%82verdotoplivnye-kotly.html">Твердотопливные
-                          котлы</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/Gorelki.html">Горелки</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/antifriz.html">Антифриз</a>
-
-                        <ul class="dl-submenu">
-
-                          <li class="subcatalog__item">
-                            <a href="collection/katalog-2.html">Каталог 2</a>
-
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/aksessuary-dlya-kotlov.html">Аксессуары
-                          для котлов</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/zapchasti-dlya-kotlov.html">Запчасти
-                          для котлов</a>
-
-                      </li>
-
-                    </ul>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/radiatory-otoplenija.html">Радиаторы
-                      отопления</a>
-
-                    <ul class="dl-submenu">
-
-                      <li class="subcatalog__item">
-                        <a href="collection/katalog-1.html">Каталог 1</a>
-
-                      </li>
-
-                    </ul>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a
-                      href="collection/vodonagrevateli.html">Водонагреватели</a>
-
-                    <ul class="dl-submenu">
-
-                      <li class="subcatalog__item">
-                        <a href="collection/nakopitelnye.html">Накопительные</a>
-
-                        <ul class="dl-submenu">
-
-                          <li class="subcatalog__item">
-                            <a
-                              href="collection/elektricheskie.html">Электрические</a>
-
-                          </li>
-
-                          <li class="subcatalog__item">
-                            <a href="collection/gazovye.html">Газовые</a>
-
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/protochnye.html">Проточные</a>
-
-                        <ul class="dl-submenu">
-
-                          <li class="subcatalog__item">
-                            <a
-                              href="collection/elektricheskie-2.html">Электрические</a>
-
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/boylery.html">Бойлеры</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a href="collection/bufernye-emkosti.html">Буферные
-                          емкости</a>
-
-                      </li>
-
-                      <li class="subcatalog__item">
-                        <a
-                          href="collection/komplektuyuschie-k-vodonagrevatelyam.html">Комплектующие
-                          к водонагревателям</a>
-
-                      </li>
-
-                    </ul>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/teplyy-pol.html">Теплый пол</a>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/nasosy.html">Насосы</a>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/baki-i-yomkosti.html">Баки и ёмкости</a>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/dymohody.html">Дымоходы</a>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/katalog-3-436ec2.html">Трубы и
-                      фитинги</a>
-
-                  </li>
-
-                  <li class="subcatalog__item">
-                    <a href="collection/katalog-3-be29f0.html">Запорно-регулирующая
-                      арматура</a>
-
-                  </li>
-
-
-                </ul>
-              </div> 
-              <div class="search-menu cell-4"> 
-                <form action="/search" method="get" class="search_widget">
-                  <div class="inpt-group">  
-                    <div class="search_widget-result"> 
-                    </div>
-                      <button type="submit" class="bttn-prim inpt-group-addon search_widget-submit"> </button> 
-                      <input type="text" autocomplete="off" class="inpt-control inpt search_widget-control" name="q" value="" placeholder="Поиск по каталогу"> 
-                    <select id="order_by" class="slct js-filter-trigger s-hidden" name="order" costum-select-options="true"> 
-                      <option value="cat-1">Категория</option>
-                      <option value="cat-2">Категория 2</option>
-                      <option value="cat-3">Категория 3</option>
-                    </select>
-                  </div> 
-                </form>
-              </div>
-            </nav>
-          </div>
-          <div class="mainnav__subcatalog">
+          <div class="eliteHeader__mainnav hide-sm">
             <div class="container">
-              <div class="subcatalog_tab-buttons">
-                <span>по брендам</span>
-                <span>по типу</span>
-              </div>
-              <div class="row subcatalog_wrap">
-                <div class="cell-3">
-                  <div class="subcatalog_column">
-                    <div class="subcatalog_title">Ручные инструменты и приспособления</div>
-                    <ul class="subcatalog_list">
-                      <li>Наборы ручных инструментов</li>
-                      <li>Гаечные ключи</li>
-                      <li>Отвертки</li>
-                      <li>Зажимной инструмент</li>
-                      <li>Режущий и пильный</li>
-                      <li>Монтажный и крепежный</li>
-                      <li>Паяльное оборудование</li>
-                      <li>Малярный и отделочный</li>
-                      <li>Для хранения инструмента</li> 
-                    </ul>
-                  </div>
+              <nav class="row is-grid mainnav_collapsedline">
+                <div class="cell-2 cell-3-md dl-menuwrapper">
+  
+                  <button class="dl-trigger">
+                    <i class="burger-icon"></i>
+                    <i class="close-icon"></i>
+                    <i class="close"></i> 
+                    <b>Все каталоги</b> 
+                  </button> 
+                </div> 
+                <div class="cell-4 search-menu"> 
+                  <form action="/search" method="get" class="search_widget">
+                    <div class="inpt-group">  
+                      <div class="search_widget-result"> 
+                      </div>
+                        <button type="submit" class="bttn-prim inpt-group-addon search_widget-submit"> </button> 
+                        <input type="text" autocomplete="off" class="inpt-control inpt search_widget-control" name="q" value="" placeholder="Поиск по каталогу"> 
+                      <select id="order_by" class="slct js-filter-trigger s-hidden" name="order" costum-select-options="true"> 
+                        <option value="cat-1">Категория</option>
+                        <option value="cat-2">Категория 2</option>
+                        <option value="cat-3">Категория 3</option>
+                      </select>
+                    </div> 
+                  </form>
                 </div>
-                <div class="cell-3">
-                  <div class="subcatalog_column">
-                    <div class="subcatalog_title">Ручные инструменты и приспособления</div>
-                    <ul class="subcatalog_list">
-                      <li>Наборы ручных инструментов</li>
-                      <li>Гаечные ключи</li>
-                      <li>Отвертки</li>
-                      <li>Зажимной инструмент</li>
-                      <li>Режущий и пильный</li>
-                      <li>Монтажный и крепежный</li>
-                      <li>Паяльное оборудование</li>
-                      <li>Малярный и отделочный</li>
-                      <li>Для хранения инструмента</li> 
-                    </ul>
+                <div class="cell-6 row phones-inline">
+                  <span>Розничный магазин:</span> 
+                  <div class="link-tel__wrap">
+                    <a class="link-tel" href="tel:+74959245530"> +7 (495) <b> 924-55-30</b></a>
+                    <i class="fas fa-phone"></i>
                   </div>
-                </div>
-                <div class="cell-3">
-                  <div class="subcatalog_column">
-                    <div class="subcatalog_title">Ручные инструменты и приспособления</div>
-                    <ul class="subcatalog_list">
-                      <li>Наборы ручных инструментов</li>
-                      <li>Гаечные ключи</li>
-                      <li>Отвертки</li>
-                      <li>Зажимной инструмент</li>
-                      <li>Режущий и пильный</li>
-                      <li>Монтажный и крепежный</li>
-                      <li>Паяльное оборудование</li>
-                      <li>Малярный и отделочный</li>
-                      <li>Для хранения инструмента</li> 
-                    </ul>
+                  <span>Юр. лица / регионы:</span> 
+                  <div class="link-tel__wrap">
+                    <a class="link-tel" href="tel:+74959245530"> +7 (495) <b> 772-50-86</b></a>
+                    <i class="fas fa-phone"></i>
                   </div>
-                </div>
-                <div class="cell-3">
-                  <div class="subcatalog_column">
-                    <div class="subcatalog_title">Ручные инструменты и приспособления</div>
-                    <ul class="subcatalog_list">
-                      <li>Наборы ручных инструментов</li>
-                      <li>Гаечные ключи</li>
-                      <li>Отвертки</li>
-                      <li>Зажимной инструмент</li>
-                      <li>Режущий и пильный</li>
-                      <li>Монтажный и крепежный</li>
-                      <li>Паяльное оборудование</li>
-                      <li>Малярный и отделочный</li>
-                      <li>Для хранения инструмента</li> 
-                    </ul>
-                  </div>
-                </div>
-                <div class="cell-3">
-                  <div class="subcatalog_column">
-                    <div class="subcatalog_title">Ручные инструменты и приспособления</div>
-                    <ul class="subcatalog_list">
-                      <li>Наборы ручных инструментов</li>
-                      <li>Гаечные ключи</li>
-                      <li>Отвертки</li>
-                      <li>Зажимной инструмент</li>
-                      <li>Режущий и пильный</li>
-                      <li>Монтажный и крепежный</li>
-                      <li>Паяльное оборудование</li>
-                      <li>Малярный и отделочный</li>
-                      <li>Для хранения инструмента</li> 
-                    </ul>
-                  </div>
-                </div>
-                <div class="cell-3">
-                  <div class="subcatalog_column">
-                    <div class="subcatalog_title">Ручные инструменты и приспособления</div>
-                    <ul class="subcatalog_list">
-                      <li>Наборы ручных инструментов</li>
-                      <li>Гаечные ключи</li>
-                      <li>Отвертки</li>
-                      <li>Зажимной инструмент</li>
-                      <li>Режущий и пильный</li>
-                      <li>Монтажный и крепежный</li>
-                      <li>Паяльное оборудование</li>
-                      <li>Малярный и отделочный</li>
-                      <li>Для хранения инструмента</li> 
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                </div> 
+              </nav> 
+              <ul class="mainnav_links__wrap row"> 
+                  <li class="header_line_link"><a href="/">О нас</a></li>
+                  <li class="header_line_link"><a href="/">Продукция</a></li>
+                  <li class="header_line_link"><a href="/">Прайс-лист</a></li> 
+                  <li class="header_line_link"><a href="/">Контакты</a></li>
+                  <li class="header_line_link"><a href="/">Акции</a></li>
+                  <li class="header_line_link"><a href="/">Кабинет</a></li> 
+              </ul>
             </div>
-
+            <div class="mainnav__subcatalog">
+              <div class="container">
+                <div class="subcatalog_tab-buttons">
+                  <span>по брендам</span>
+                  <span>по типу</span>
+                </div>
+                <div class="row subcatalog_wrap">
+                  <div class="cell-3">
+                    <div class="subcatalog_column">
+                      <div class="subcatalog_title">Ручные инструменты и приспособления</div>
+                      <ul class="subcatalog_list">
+                        <li>Наборы ручных инструментов</li>
+                        <li>Гаечные ключи</li>
+                        <li>Отвертки</li>
+                        <li>Зажимной инструмент</li>
+                        <li>Режущий и пильный</li>
+                        <li>Монтажный и крепежный</li>
+                        <li>Паяльное оборудование</li>
+                        <li>Малярный и отделочный</li>
+                        <li>Для хранения инструмента</li> 
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cell-3">
+                    <div class="subcatalog_column">
+                      <div class="subcatalog_title">Ручные инструменты и приспособления</div>
+                      <ul class="subcatalog_list">
+                        <li>Наборы ручных инструментов</li>
+                        <li>Гаечные ключи</li>
+                        <li>Отвертки</li>
+                        <li>Зажимной инструмент</li>
+                        <li>Режущий и пильный</li>
+                        <li>Монтажный и крепежный</li>
+                        <li>Паяльное оборудование</li>
+                        <li>Малярный и отделочный</li>
+                        <li>Для хранения инструмента</li> 
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cell-3">
+                    <div class="subcatalog_column">
+                      <div class="subcatalog_title">Ручные инструменты и приспособления</div>
+                      <ul class="subcatalog_list">
+                        <li>Наборы ручных инструментов</li>
+                        <li>Гаечные ключи</li>
+                        <li>Отвертки</li>
+                        <li>Зажимной инструмент</li>
+                        <li>Режущий и пильный</li>
+                        <li>Монтажный и крепежный</li>
+                        <li>Паяльное оборудование</li>
+                        <li>Малярный и отделочный</li>
+                        <li>Для хранения инструмента</li> 
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cell-3">
+                    <div class="subcatalog_column">
+                      <div class="subcatalog_title">Ручные инструменты и приспособления</div>
+                      <ul class="subcatalog_list">
+                        <li>Наборы ручных инструментов</li>
+                        <li>Гаечные ключи</li>
+                        <li>Отвертки</li>
+                        <li>Зажимной инструмент</li>
+                        <li>Режущий и пильный</li>
+                        <li>Монтажный и крепежный</li>
+                        <li>Паяльное оборудование</li>
+                        <li>Малярный и отделочный</li>
+                        <li>Для хранения инструмента</li> 
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cell-3">
+                    <div class="subcatalog_column">
+                      <div class="subcatalog_title">Ручные инструменты и приспособления</div>
+                      <ul class="subcatalog_list">
+                        <li>Наборы ручных инструментов</li>
+                        <li>Гаечные ключи</li>
+                        <li>Отвертки</li>
+                        <li>Зажимной инструмент</li>
+                        <li>Режущий и пильный</li>
+                        <li>Монтажный и крепежный</li>
+                        <li>Паяльное оборудование</li>
+                        <li>Малярный и отделочный</li>
+                        <li>Для хранения инструмента</li> 
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cell-3">
+                    <div class="subcatalog_column">
+                      <div class="subcatalog_title">Ручные инструменты и приспособления</div>
+                      <ul class="subcatalog_list">
+                        <li>Наборы ручных инструментов</li>
+                        <li>Гаечные ключи</li>
+                        <li>Отвертки</li>
+                        <li>Зажимной инструмент</li>
+                        <li>Режущий и пильный</li>
+                        <li>Монтажный и крепежный</li>
+                        <li>Паяльное оборудование</li>
+                        <li>Малярный и отделочный</li>
+                        <li>Для хранения инструмента</li> 
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>  
+          <div class="eliteHeader__mainnav hide show-sm">
+            <div id="dl-menu" class="dl-menuwrapper">
+              <button class="dl-trigger"><i class="burger-icon"></i>
+                <i class="close-icon"></i>
+                <i class="close"></i> 
+                <b>Все каталоги</b> 
+              </button>
+              <ul class="subcatalog dl-menu">
+    
+    
+                <li class="subcatalog__item">
+                  <a href="#">Демо страницы</a>
+    
+                  <ul class="dl-submenu">
+    
+                    <li class="subcatalog__item">
+                      <a href="catalog.html">Каталог</a>
+    
+                    </li>
+    
+                    <li class="subcatalog__item">
+                      <a href="tovar.html">Товар</a>
+    
+                    </li>
+    
+                    <li class="subcatalog__item">
+                      <a href="about.html">О компании</a>
+    
+                    </li> 
+    
+                    <li class="subcatalog__item">
+                      <a href="#">Подкаталог 2 уровня</a>
+    
+                      <ul class="dl-submenu">
+    
+                        <li class="subcatalog__item">
+                          <a href="#">Подкатегория 2 уровня</a>
+    
+                        </li>
+    
+                        <li class="subcatalog__item">
+                          <a href="#">Подкатегория 2 уровня</a>
+    
+                        </li>
+    
+                        <li class="subcatalog__item">
+                          <a href="#">Подкатегория 2 уровня</a>
+    
+                        </li>
+    
+                        <li class="subcatalog__item">
+                          <a href="#">Подкатегория 2 уровня</a>
+    
+                        </li>
+    
+                        <li class="subcatalog__item">
+                          <a href="#">Подкатегория 2 уровня</a>
+    
+                        </li>
+    
+                        <li class="subcatalog__item">
+                          <a href="#">Подкатегория 2 уровня</a>
+    
+                        </li>
+    
+                      </ul>
+    
+                    </li> 
+    
+                  </ul>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#"> Гаечные ключи </a>
+    
+                  <ul class="dl-submenu">
+    
+                    <li class="subcatalog__item">
+                      <a href="#">Гаечные ключи с открытым зевом </a>
+    
+                    </li>
+    
+                  </ul>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a
+                    href="№">Гаечные ключи </a>
+    
+                  <ul class="dl-submenu">
+    
+                    <li class="subcatalog__item">
+                      <a href="#">Динамометрический инструмент</a> 
+    
+                    </li>
+    
+                    <li class="subcatalog__item">
+                      <a href="#">Прочее</a>
+    
+                      <ul class="dl-submenu">
+    
+                        <li class="subcatalog__item">
+                          <a
+                            href="#">Электрические</a>
+    
+                        </li>
+    
+                      </ul>
+    
+                    </li>
+    
+                    <li class="subcatalog__item">
+                      <a href="#">Динамометрический инструмент</a>
+    
+                    </li>
+    
+                    <li class="subcatalog__item">
+                      <a href="#">Динамометрический инструмент</a>
+    
+                    </li>
+    
+                    <li class="subcatalog__item">
+                      <a
+                        href="#">Динамометрический инструмент</a>
+    
+                    </li>
+    
+                  </ul>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#">Динамометрический инструмент</a>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#"> Держатели, адаптеры и соединительные детали </a>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#"> Наборы бит </a>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#"> Наборы бит  </a>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#"> Наборы бит  </a>
+    
+                </li>
+    
+                <li class="subcatalog__item">
+                  <a href="#"> Наборы бит  </a>
+    
+                </li>
+    
+    
+              </ul>
+            </div>
+           
           </div>
-        </div> 
-        <nav id="menu" data-mmenu-title="Меню">
-          <ul>
-            <li class="menu__link for-main">
-              <a href="index.html">Главная</a>
-            </li>
-
-            <li class="menu__link"><a
-                href="collection/kotly-otoplenija.html">Котлы отопления</a>
-
-              <ul>
-
-                <li>
-                  <a href="collection/gazovye-kotly.html">Газовые котлы</a>
-
-                </li>
-
-                <li>
-                  <a href="collection/elektricheskie-kotly.html">Электрические
-                    котлы</a>
-
-                </li>
-
-                <li>
-                  <a href="collection/%d1%82verdotoplivnye-kotly.html">Твердотопливные
-                    котлы</a>
-
-                </li>
-
-                <li>
-                  <a href="collection/Gorelki.html">Горелки</a>
-
-                </li>
-
-                <li>
-                  <a href="collection/antifriz.html">Антифриз</a>
-
-
-                <li><a href="collection/katalog-2.html">Каталог 2</a></li>
-
-
-            </li>
-
-            <li>
-              <a href="collection/aksessuary-dlya-kotlov.html">Аксессуары для
-                котлов</a>
-
-            </li>
-
-            <li>
-              <a href="collection/zapchasti-dlya-kotlov.html">Запчасти для
-                котлов</a>
-
-            </li>
-
-          </ul>
-
-          </li>
-
-          <li class="menu__link"><a
-              href="collection/radiatory-otoplenija.html">Радиаторы
-              отопления</a>
-
+          <nav id="menu" data-mmenu-title="Меню">
             <ul>
-
-              <li>
-                <a href="collection/katalog-1.html">Каталог 1</a>
-
+              <a href="/index.html" class="logotype in-mobile">
+                <img src="assets/logo-icon-only-black.svg" alt="">
+              </a>
+              <li class="menu__link for-main">
+                <a href="index.html">Главная</a>
               </li>
-
+  
+              <li class="menu__link"><a href="catalog.html">Демо Каталог</a>
+                <ul>
+                  <li>
+                    <a href="#">Шарнирно-губцевый инструмент</a>
+  
+                  </li>
+  
+                  <li>
+                    <a href="#">Слесарно-монтажный инструмент</a>
+  
+                  </li>
+  
+                  <li>
+                    <a href="#">Отвертки, ключи, наборы WERA</a>
+  
+                  </li>
+  
+                  <li>
+                    <a href="#"> Профессиональный ручной инструмент Beta (Италия)
+                    </a>
+  
+                  </li>
+  
+                  <li>
+                    <a href="#">Tohnichi</a>
+  
+  
+                  <li><a href="#">Каталог 2</a></li>
+  
+  
+              </li>
+  
+              <li>
+                <a href="#">Шарнирно-губцевый инструмент Orbis Will GmbH + Co.
+                  KG</a>
+  
+              </li>
+  
+              <li>
+                <a href="#">Запчасти для
+                  котлов</a>
+  
+              </li>
+  
             </ul>
-
-          </li>
-
-          <li class="menu__link"><a
-              href="collection/vodonagrevateli.html">Водонагреватели</a>
-
-            <ul>
-
-              <li>
-                <a href="collection/nakopitelnye.html">Накопительные</a>
-
-
-              <li><a href="collection/elektricheskie.html">Электрические</a>
-              </li>
-
-              <li><a href="collection/gazovye.html">Газовые</a></li>
-
-
-          </li>
-
-          <li>
-            <a href="collection/protochnye.html">Проточные</a>
-
-
-          <li><a href="collection/elektricheskie-2.html">Электрические</a></li>
-
-
-          </li>
-
-          <li>
-            <a href="collection/boylery.html">Бойлеры</a>
-
-          </li>
-
-          <li>
-            <a href="collection/bufernye-emkosti.html">Буферные емкости</a>
-
-          </li>
-
-          <li>
-            <a href="collection/komplektuyuschie-k-vodonagrevatelyam.html">Комплектующие
-              к водонагревателям</a>
-
-          </li>
-
-          </ul>
-
-          </li>
-
-          <li class="menu__link"><a href="collection/teplyy-pol.html">Теплый
-              пол</a>
-
-          </li>
-
-          <li class="menu__link"><a href="collection/nasosy.html">Насосы</a>
-
-          </li>
-
-          <li class="menu__link"><a href="collection/baki-i-yomkosti.html">Баки
-              и ёмкости</a>
-
-          </li>
-
-          <li class="menu__link"><a href="collection/dymohody.html">Дымоходы</a>
-
-          </li>
-
-          <li class="menu__link"><a
-              href="collection/katalog-3-436ec2.html">Трубы и фитинги</a>
-
-          </li>
-
-          <li class="menu__link"><a
-              href="collection/katalog-3-be29f0.html">Запорно-регулирующая
-              арматура</a>
-
-          </li>
-
-          <li class="mobile_navline">
-            <div class="divaloreHeader__icon search"
-              onclick="$('.search__widget_mobile').show(300);">
-            </div>
-            <form action="http://elite-tools.ru/search" method="get"
-              class="search__widget_mobile">
-              <div class="inpt-group">
-                <i class="close"
-                  onclick="$('.search__widget_mobile').toggle();"></i>
-                <input type="text" autocomplete="off"
-                  class="inpt-control inpt search_widget-control" name="q"
-                  value="" placeholder="Поиск" data-search-field=""
-                  inprocess="false">
-                <button type="submit"
-                  class="icon-search-black bttn-prim inpt-group-addon search_widget-submit">
-                  </a>
+  
+            </li>
+  
+            <li class="menu__link"><a href="tovar.html">
+                Демо Товар</a> 
+            </li>
+  
+            <li class="menu__link"><a href="about.html">
+                Демо о нас</a> 
+            </li>
+  
+            <li class="menu__link"><a href="#">
+              Новости</a>
+  
+            </li>
+  
+            <li class="menu__link"><a href="#"> О компании</a>
+  
+            </li> 
+  
+            <li class="mobile_navline">
+              <div class="divaloreHeader__icon search"
+                onclick="$('.search__widget_mobile').show(300);">
               </div>
-              <input type="hidden" name="lang" value="ru">
-              <div class="search_widget-result">
-                <div data-search-result="" class="search_widget-result-inner">
+              <form action="http://elite-tools.ru/search" method="get"
+                class="search__widget_mobile">
+                <div class="inpt-group">
+                  <i class="close"
+                    onclick="$('.search__widget_mobile').toggle();"></i>
+                  <input type="text" autocomplete="off"
+                    class="inpt-control inpt search_widget-control" name="q"
+                    value="" placeholder="Поиск" data-search-field=""
+                    inprocess="false">
+                  <button type="submit"
+                    class="icon-search-black bttn-prim inpt-group-addon search_widget-submit">
+                    </a>
                 </div>
-              </div>
-            </form>
-
-            <a href="page/favorites.html"
-              class="divaloreHeader__icon favorites">
-              <small data-favorites-counter> </small>
-            </a>
-
-            <a href="client_account/login.html"
-              class="divaloreHeader__icon login ">
-            </a>
-          </li>
-
-          <li class="additional">
-            <p class="address"> Метро Павелецкая <a class="link-tel"
-                href="tel:+7 (499) 703 05 10"> <i class="fas fa-phone"></i> +7
-                (499) 703 05 10</p></a>
-          </li>
-          <li class="additional">
-            <p class="address">Никольский Пассаж <a class="link-tel"
-                href="tel:+7 (499) 703 05 10"> <i class="fas fa-phone"></i> +7
-                (499) 703 05 10</p></a>
-          </li>
-          <li class="additional">
-            <p class="address">Ветошный переулок, д. 9. ТЦ <a class="link-tel"
-                href="tel:+7 (499) 703 05 10"> <i class="fas fa-phone"></i> +7
-                (499) 703 05 10</p></a>
-          </li>
-          </ul>
-        </nav> 
-      </header>
-    </div>
+                <input type="hidden" name="lang" value="ru">
+                <div class="search_widget-result">
+                  <div data-search-result="" class="search_widget-result-inner">
+                  </div>
+                </div>
+              </form> 
+            </li>
+  
+            <li class="additional">
+              <p class="address"> Розничный магазин: <a class="link-tel" href="tel:+74959245530"><i class="fas fa-phone"></i> +7 (495) <b> 924-55-30</b></a>
+            </li>
+            <li class="additional">
+              <p class="address">Юр. лица / регионы: <a class="link-tel" href="tel:+74959245530"><i class="fas fa-phone"></i> +7 (495) <b> 772-50-86</b></a>
+            </li> 
+            </ul>
+          </nav> 
+       
+      </div>
+    </header>
     <div class="content">
       <div class="main-wrapper">
 
@@ -637,13 +569,13 @@
 
                   <div class="promo__img_wrapper">
 
-                    <img src="../assets/banner1.png" alt="">
+                    <img src="assets/banner1.png" alt="">
                     <div class="promo_blur">
                     </div>
                     <div class="promo_text_wrapper"
                       data-swiper-parallax-scale="0.35">
                       <span class="promo_text text1"
-                        data-swiper-parallax="-1700">Новинка <br> LEVERAXE </span>
+                        data-swiper-parallax="-1700">Новинка <br> Gedore </span>
                       <span class="promo_text text2"
                         data-swiper-parallax="-1550"> Инновационный финский колун-рычаг</span>
                     </div>
@@ -654,18 +586,16 @@
                 <div class="swiper-slide" data-swiper-parallax="-23%">
 
                   <div class="promo__img_wrapper">
-
-                    <img
-                      src="../assets/banner-leveraxe.jpg"
-                      alt="">
+                    
+                    <img src="assets/banner1.png" alt="">
                     <div class="promo_blur">
                     </div>
                     <div class="promo_text_wrapper"
                       data-swiper-parallax-scale="0.35">
                       <span class="promo_text text1"
-                        data-swiper-parallax="-1700"> LEVERAXE </span>
+                        data-swiper-parallax="-1700">Новинка <br> Gedore </span>
                       <span class="promo_text text2"
-                        data-swiper-parallax="-1550">Инновационный финский колун-рычаг</span>
+                        data-swiper-parallax="-1550"> Инновационный финский колун-рычаг</span>
                     </div>
 
                   </div>
@@ -720,7 +650,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -775,7 +705,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/gaikov1.jpg"
+                              src="assets/prod/gaikov1.jpg"
                               alt="Гайковерт пневматический"> 
                           </a> 
                         </div>
@@ -828,7 +758,7 @@
                           </div> 
                           <a href="#" class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/torx.jpg"
+                              src="assets/prod/torx.jpg"
                               alt="Головки Тorx"> 
                           </a> 
                         </div>
@@ -866,8 +796,7 @@
                         <div class="product-img__wrap">
                           <div class="sticker__wrap">
                             <div class="stiker stiker-country">
-                            </div> 
-                            <div class="stiker stiker-new">Новинка</div> 
+                            </div>  
                             <div class="product__stick stiker-sale">
                               скидка 9%
                             </div>
@@ -887,7 +816,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/derev1.jpg"
+                              src="assets/prod/derev1.jpg"
                               alt="Деревянная киянка"> 
                           </a> 
                         </div>
@@ -942,7 +871,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -997,7 +926,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1030,7 +959,7 @@
                   </li> 
 
                 </ul> 
-                <div class="tabcontent__arrows_wrapper">
+                <div class="tabcontent__arrows_wrapper hide-sm">
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
@@ -1062,7 +991,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1117,7 +1046,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1172,7 +1101,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1210,8 +1139,7 @@
                         <div class="product-img__wrap">
                           <div class="sticker__wrap">
                             <div class="stiker stiker-country">
-                            </div> 
-                            <div class="stiker stiker-new">Новинка</div> 
+                            </div>  
                             <div class="product__stick stiker-sale">
                               скидка 9%
                             </div>
@@ -1231,7 +1159,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1286,7 +1214,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1341,7 +1269,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1401,7 +1329,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1456,7 +1384,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1511,7 +1439,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1549,8 +1477,7 @@
                         <div class="product-img__wrap">
                           <div class="sticker__wrap">
                             <div class="stiker stiker-country">
-                            </div> 
-                            <div class="stiker stiker-new">Новинка</div> 
+                            </div>  
                             <div class="product__stick stiker-sale">
                               скидка 9%
                             </div>
@@ -1570,7 +1497,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1625,7 +1552,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1680,7 +1607,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1735,7 +1662,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1790,7 +1717,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1845,7 +1772,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1883,8 +1810,7 @@
                         <div class="product-img__wrap">
                           <div class="sticker__wrap">
                             <div class="stiker stiker-country">
-                            </div> 
-                            <div class="stiker stiker-new">Новинка</div> 
+                            </div>  
                             <div class="product__stick stiker-sale">
                               скидка 9%
                             </div>
@@ -1904,7 +1830,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -1959,7 +1885,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -2014,7 +1940,7 @@
                           <a href="#"
                             class="img__relative">
                             <img class="product-img"
-                              src="../assets/prod/bolt1.jpg"
+                              src="assets/prod/bolt1.jpg"
                               alt="Болторез торцевой (Германия)"> 
                           </a> 
                         </div>
@@ -2053,22 +1979,23 @@
             <a href="/catalog" class="bttn1">в каталог<i class="long-arrow"></i> </a>
           </div>
         </section>   
+        
         <section class="banners2-section" data-aos="fade-in">
           <div class="black-row">
             <div class="container">
               <div class="row">
-                <div class="cell-6 text-center">О компании</div>
-                <div class="cell-6 text-center">Партнёрам</div>
+                <div class="cell-6 cell-12-sm text-center">О компании</div>
+                <div class="cell-6 hide-sm text-center">Партнёрам</div>
               </div>
             </div>
           </div> 
           <div class="container">
             <div class="row banners2-section_grid">
 
-              <div class="cell-6">
+              <div class="statick-block cell-6 cell-12-sm">
                 <div class="img__relative">
                   <img class="banner-img"
-                    src="../assets/banner-img-index1.jpg"
+                    src="assets/banner-img-index1.jpg"
                     alt="">
                 </div>
                 <div class="banners2-section__info">
@@ -2087,10 +2014,10 @@
                   </span>
                 </div>
               </div>
-              <div class="cell-6 ">
+              <div class="shift-block cell-6 hide-sm">
                 <div class="img__relative">
                   <img class="banner-img"
-                    src="../assets/banner-img-index2.jpg"
+                    src="assets/banner-img-index2.jpg"
                     alt="">
                 </div>
                 <div class="banners2-section__info">
@@ -2102,25 +2029,53 @@
               </div> 
             </div>
           </div>
+          
+          <div class="black-row hide show-sm">
+            <div class="container">
+              <div class="row"> 
+                <div class="cell-12  text-center">Партнёрам</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container hide show-sm">
+            <div class="row banners2-section_grid"> 
+              <div class="shift-block cell-12 ">
+                <div class="img__relative">
+                  <img class="banner-img"
+                    src="assets/banner-img-index2.jpg"
+                    alt="">
+                </div>
+                <div class="banners2-section__info">
+                  <a href="#" class="banners2-section__link">Каталог товаров</a>
+                  <a href="#" class="banners2-section__link">2020</a>
+                  <a href="#" class="banners2-section__pdf"><i class="fas fa-file-pdf"></i> Полный прайс-лист</a>
+                  <a href="#" class="button arrowrigth_white">Подробнее</a>
+                </div>
+              </div> 
+            </div>
+          </div>
+
         </section> 
+
         <section class="advantages"> 
             <div class="container">
               <div class="row">
-                <div class="advantage__block cell-4 text-left">
+                <div class="advantage__block cell-4 cell-12-sm text-left">
                   <div class="advantage__block_wrap" data-aos="fade-in">
                     <i class="advantage__block_number"></i>
                     <div class="advantage__block_name">Широкий ассртимент</div>
                     <div class="advantage__block_text">Каталог насчитывает более 100 тыс позиций на любой вкус</div> 
                   </div>
                 </div>
-                <div class="advantage__block cell-4 text-left">
+                <div class="advantage__block cell-4 cell-12-sm text-left">
                   <div class="advantage__block_wrap" data-aos="fade-in">
                     <i class="advantage__block_number"></i>
                     <div class="advantage__block_name">Доставка</div>
                     <div class="advantage__block_text">По всей России любой транспортной компанией</div> 
                   </div>
                 </div>
-                <div class="advantage__block cell-4 text-left">
+                <div class="advantage__block cell-4 cell-12-sm text-left">
                   <div class="advantage__block_wrap" data-aos="fade-in">
                     <i class="advantage__block_number"></i>
                     <div class="advantage__block_name">КАЧЕСТВО ТОВАРА</div>
@@ -2131,9 +2086,10 @@
               </div>
             </div>   
         </section> 
+
       </div>
 
-      <section class="portfolio" data-aos="fade-in">
+      <section class="portfolio" >
         <div class="container">
           <h5 class="all-brands">Все бренды </h5>
           <div class="row portfolio__wrap">
@@ -2144,11 +2100,11 @@
                   <a class="portfolio__link img__relative"
                     href="#">
                     <img class="product-img"
-                      src="../assets/brand-1.png"
+                      src="assets/brand-1.png"
                       alt="">
                   </a>
 
-                  <div class="card-quick-links"> 
+                  <div class="card-quick-links hide-sm"> 
                     <a class="quick-view arrowrigth_white"
                       href="#" >
                       В каталог
@@ -2161,11 +2117,11 @@
                   <a class="portfolio__link img__relative"
                     href="#">
                     <img class="product-img"
-                      src="../assets/brand-2.png"
+                      src="assets/brand-2.png"
                       alt="">
                   </a>
 
-                  <div class="card-quick-links"> 
+                  <div class="card-quick-links hide-sm"> 
                     <a class="quick-view arrowrigth_white"
                       href="#" >
                       В каталог
@@ -2178,11 +2134,11 @@
                   <a class="portfolio__link img__relative"
                     href="#">
                     <img class="product-img"
-                      src="../assets/brand-3.png"
+                      src="assets/brand-3.png"
                       alt="">
                   </a>
 
-                  <div class="card-quick-links"> 
+                  <div class="card-quick-links hide-sm"> 
                     <a class="quick-view arrowrigth_white"
                       href="#" >
                       В каталог
@@ -2195,26 +2151,45 @@
                   <a class="portfolio__link img__relative"
                     href="#">
                     <img class="product-img"
-                      src="../assets/brand-4.png"
+                      src="assets/brand-5.png"
                       alt="">
                   </a>
 
-                  <div class="card-quick-links"> 
+                  <div class="card-quick-links hide-sm"> 
                     <a class="quick-view arrowrigth_white"
                       href="#" >
                       В каталог
                     </a>
                   </div>
 
-                </li> <li class="swiper-slide">
+                </li> 
+
+                <li class="swiper-slide">
                   <a class="portfolio__link img__relative"
                     href="#">
                     <img class="product-img"
-                      src="../assets/brand-5.png"
+                      src="assets/brand-4.png"
                       alt="">
                   </a>
 
-                  <div class="card-quick-links"> 
+                  <div class="card-quick-links hide-sm"> 
+                    <a class="quick-view arrowrigth_white"
+                      href="#" >
+                      В каталог
+                    </a>
+                  </div>
+
+                </li> 
+
+                <li class="swiper-slide">
+                  <a class="portfolio__link img__relative"
+                    href="#">
+                    <img class="product-img"
+                      src="assets/brand-5.png"
+                      alt="">
+                  </a>
+
+                  <div class="card-quick-links hide-sm"> 
                     <a class="quick-view arrowrigth_white"
                       href="#" >
                       В каталог
@@ -2244,7 +2219,7 @@
                     Пт <b>9:30 - 17:30</b><br>
                     <span class="style-red">Выходные: <b>Сб, Вс</b></span> </p>
               </div>
-              <span>
+              <span class="text-center-sm">
                 Профессиональный, фирменный магазин 
                 ручного инструмента <b>ЭЛИТ-ИНСТРУМЕНТ</b> 
                 г. Москва, Горбунова, дом 2 офис 628B в 
@@ -2266,12 +2241,12 @@
                 <a class="link-callback" href="tel:+74959245530"><b>Обратный звонок</b></a>
               </div>
               <div class="logo-text-only">
-                <img src="../assets/logo-text-only.svg" alt="">
+                <img src="assets/logo-text-only.svg" alt="">
               </div>
               
             </div>
             <div class="last-cell cell-4 cell-6-md cell-12-sm">
-              <form class="q-form col-lg-6 col-md-6" method="POST" action="https://formspree.io/info@elite-tools.ru">  
+              <form class="q-form col-lg-6 col-md-6" method="POST" action="https://formspree.io/info@elite-tools.ru" data-aos="fade-in">  
                 <input type="hidden" name="_language" value="ru">
                 <input type="hidden" name="_format" value="plain">
                 <input type="hidden" name="_next" value="/success">
@@ -2293,14 +2268,11 @@
           <div class="container">
             <div class="row">
               <div class="cell-5 cell-10-sm  pays text-left"> <img
-                  src="../assets/pay.png"
+                  src="assets/pay.png"
                   alt="">
               </div>
               <span class="cell-5 cell-10-sm text-right">© 2020
-                «Elite-Group». Все права защищены. <br>
-                Powered by <a style="text-decoration: underline;"
-                  href="https://klimovproject.ru/" target="_blank"
-                  rel="noopener noreferrer">klimovproject</a>
+                «Elite-Group». Все права защищены. <br> 
               </span>
             </div>
           </div>
@@ -2393,14 +2365,14 @@
 </div>
 
 
-<script src="../assets/modernizr.js"></script>
-<script src="../assets/jquery.js"></script> 
-<script src="../assets/jquery_001.js"></script>
-<script src="../assets/aos.js"></script> 
-<script src="../assets/mmenu-light.js"></script>  
-<script src="../assets/swiper.min.js"></script>   
-<script src="../assets/elite.js"></script> 
-<script src="../assets/index.js"></script>   
+<script src="assets/modernizr.js"></script>
+<script src="assets/jquery.js"></script> 
+<script src="assets/jquery_001.js"></script>
+<script src="assets/aos.js"></script> 
+<script src="assets/mmenu-light.js"></script>  
+<script src="assets/swiper.min.js"></script>   
+<script src="assets/elite.js"></script> 
+<script src="assets/index.js"></script>   
   
 
 </html>
