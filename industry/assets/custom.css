@@ -3236,7 +3236,12 @@ svg.hero-arrow {
 .addLinks__link a {
     color: var(--color_gray);
 }
-
+.SiteFooter_addLinks:hover {
+    --color_gray: #ccc;
+} 
+.addLinks__link:hover a {
+    color: var(--color_black);
+}
 .container.SiteFooter_copy {
     padding-bottom: 140px;
 }
