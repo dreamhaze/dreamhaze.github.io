@@ -2967,7 +2967,7 @@ svg.hero-arrow {
 }
 
 .icons__line_parallax {
-    background: url("../images/parallax_bg_1.jpg") no-repeat bottom center / cover transparent;
+    background: url("../images/parallax_bg_1.jpg") no-repeat bottom center transparent;
 }
 
 .icon__block {
@@ -3189,7 +3189,7 @@ svg.hero-arrow {
     text-transform: uppercase;
     padding-top: 30px;
     padding-bottom: 30px;
-    line-height: 70px;
+    line-height: 62px;
 }
 
 .article__review_wrap {

@@ -1,7 +1,7 @@
 // Прибиваем меню при скролле
 
-(function() {
-    $(window).scroll(function() {
+(function () {
+    $(window).scroll(function () {
         if ((window.pageYOffset > 250) && (window.innerWidth <= 768)) {
             $('.js-top-panel-fixed').addClass('fixed');
             $('.top-panel-wrapper').addClass('z-index');
@@ -11,7 +11,7 @@
         }
     });
 
-    $('.js-arrow-up').click(function() {
+    $('.js-arrow-up').click(function () {
         $('body,html').animate({ scrollTop: 0 }, 500);
         $(this).blur();
     });
@@ -32,11 +32,21 @@ var swiperMain = new Swiper('.hero__slider', {
     },
 });
 
+$(window).scroll(function () {
+    function parallax() {
+        var scrolled = $(window).scrollTop();
+        var position = $( ".icons__line_parallax" ).position().top - $(window).height()*2;  
+        if  (scrolled >= position) { 
+            $('.icons__line_parallax').css('background-position-y', 90 - (scrolled * 0.13) + 'px');
+        }
+    }
+});
+
 
 /**
  * PRODUCT_TABS
  */
-$(document).ready(function() {
+$(document).ready(function () {
     $(".js-tabs").dataTabs({
         state: "tab", // роль плагина tab/accordion
         event: "click",
@@ -58,12 +68,12 @@ $(document).ready(function() {
         jqMethodOpen: "fadeIn", // jq метод открытия табы
         jqMethodCloseSpeed: 0, // скорость закрытия табы
         jqMethodClose: "slideUp", // jq метод закрытия табы
-        onInit: function() {}, // плагин инициализировался (onInit)
-        onTab: function() {}, // переключили таб (self)
-        onMouseover: function() {}, // навели на блок табов (event, self)
-        onMouseout: function() {} // убрали курсор с блока табов (event, self)
+        onInit: function () { }, // плагин инициализировался (onInit)
+        onTab: function () { }, // переключили таб (self)
+        onMouseover: function () { }, // навели на блок табов (event, self)
+        onMouseout: function () { } // убрали курсор с блока табов (event, self)
     });
-}); 
+});
 
 
 /**
@@ -88,7 +98,7 @@ $(document).ready(function() {
 //         controls: ['zoomControl']
 //     }); 
 //     // points
-   
+
 //     myPlacemark2 = new ymaps.Placemark([55.623301, 37.422551], {
 //             hintContent: 'Miniso ТЦ САЛАРИС',
 //             balloonContent: '<div class="map-title"><b>Miniso ТЦ САЛАРИС</b></div><div class="map-text"><span class="map-address">г. Москва, поселение Московский, д.Саларьево</span><br><span class="map-tel">+7(499) 136 44 44</span> <br><span class="map-worktime">Пн-Пт: c 10:00 до 22:00<br>Выходные: 09:30-22:00</span></div><button id="230" type="button" class="classic-btn select-shop">Выбрать</button>'
@@ -119,7 +129,7 @@ $(document).ready(function() {
 //             idd:238
 //         }
 //     ); 
-   
+
 //     myPlacemark7 = new ymaps.Placemark([55.744632, 37.566072], {
 //             hintContent: 'Miniso ТРЦ Европейский',
 //             balloonContent: '<div class="map-title"><b>Miniso ТЦ Европейский</b></div><div class="map-text"><span class="map-address">г.Москва, площадь Киевского вокзала, 2</span><br><span class="map-tel">+7(499) 136 44 44</span>  <br><span class="map-worktime">Пн-Пт: c 10:00 до 22:00<br>Выходные: 09:30-22:00</span></div><button id="241" type="button" class="classic-btn select-shop">Выбрать</button>'
