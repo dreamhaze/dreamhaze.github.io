@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title> Site </title>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="keywords" content='Site' />
+    <meta name="description" content='Site' />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+    <!-- fixes -->
+    <!--[if IE]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="assets/normalise.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/core.css">
+    <link rel="stylesheet" type="text/css" href="assets/jcf.css">
+    <link rel="stylesheet" type="text/css" href="assets/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/mmenu-light.css">
+    <link rel="stylesheet" type="text/css" href="assets/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css">
+
+    <link rel="stylesheet" href="animate.css" />
+</head>
+
+
+
+
+
+<body class="template-is-collection is-index-page">
+    <div id="page">
+        <header class="header-wrapper">
+            <div class="SiteHeader">
+            </div>
+        </header>
+        <div class="right-nav">
+            <div class="col flex-center flex-middle">
+                <nav class="icon-group top-group col">
+                    <a href="#menu" class="side-bttn__mmenu hide show-sm">
+                        <div class="svg_wrap">
+                            <svg class="icon burger">
+                                <use xlink:href="#burger-icon"></use>
+                            </svg>
+                        </div>
+                    </a> 
+                    <a href="#" class="side-bttn bttn__burger"  
+                        data-activate-config="false"
+                        data-deactivate-config="false">
+                        <svg class="icon burger">
+                            <use xlink:href="#burger-icon"></use>
+                        </svg>
+                    </a>  
+                    <div class="side-bttn bttn__login">
+                        <svg class="icon login">
+                            <use xlink:href="#login-icon"></use>
+                        </svg>
+                        <div class="submenu__content">
+                            <div class="submenu__content_wrap">
+                                <div class="submenu__label">
+                                    вход в личный кабинет
+                                </div>
+                                <form class="co-form--login co-modal-login_form"
+                                    action="/client_account/session"
+                                    accept-charset="UTF-8" method="post">
+                                    <input name="utf8" type="hidden" value="✓">
+                                    <input type="hidden" name="authenticity_token" value="">
+                                    <div class="co-input co-input--text co-input--language co-input--nested co-input--required co-input--empty_nested">
+                                        <div class="co-input-text">
+                                            <input placeholder="Ваш Логин"
+                                                type="text" name="email"
+                                                class="co-input-field js-input-field"
+                                                id="email" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="co-input co-input--text co-input--language co-input--nested co-input--required co-input--empty_nested">
+                                        <div class="co-input-text">
+                                            <input placeholder="Ваш пароль"
+                                                type="password" name="password"
+                                                id="password"
+                                                class="co-input-field js-input-field"
+                                                required="required">
+                                        </div>
+                                    </div>
+                                    <div class="co-form-controls"> 
+                                        <button class="button_light__wrap co-button co-form-button js-co-login-submit"  name="commit" type="submit">
+                                            <div class="button_light__title">Войти</div> 
+                                            <div class="button_light__square">
+                                                <div class="svg_wrap">
+                                                    <svg class="icon arrow-right">
+                                                        <use xlink:href="#arrow-right">
+                                                        </use>
+                                                    </svg>
+                                                </div> 
+                                            </div>  
+                                        </button> 
+                                        <a class="submenu__link co-button co-button--link co-form-button"
+                                            href="/client_account/password/change">
+                                            Забыли пароль?
+                                        </a>
+                                        <a class="submenu__link co-button co-button--link link_important co-form-button"
+                                            href="/client_account/contacts/new">
+                                            или зарегистрироваться 
+                                            <div class="svg_wrap">
+                                                <svg class="icon arrow-right">
+                                                    <use xlink:href="#arrow-right">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/compares" class="side-bttn bttn__compares">
+                        <div class="bttn__icon_wrap"> 
+                            <svg class="icon compares">
+                                <use xlink:href="#compares-icon"></use>
+                            </svg> 
+                            <span class="bttn__counter" data-compares-counter>2</span>
+                        </div>
+                    </a>
+                    <div class="side-bttn bttn__cart">
+                        <svg class="icon cart">
+                            <use xlink:href="#cart-icon"></use>
+                        </svg>
+                        <div class="submenu__content">
+                            <div class="submenu__content_wrap"> 
+                                <div class="row"> 
+                                    <div class="cart__items_col">
+                                        <div class="col__label"> 
+                                            В вашей корзине <a class="color_main" href="#">4 товара</a>,<br>
+                                            которые вы можете приобрести прямо сейчас:
+                                        </div> 
+                                        <ul class="cart__items"> 
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                      <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Асфальтобетонный завод LB 500 40тонн в час
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+        
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                      <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Асфальтобетонный завод LB 500 40тонн в час
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                      <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                      <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                      <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                      <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                    <div class="cart__items_col">
+                                        <div class="col__label"> 
+                                            А также <a class="color_main" href="#">3 товара</a> <br>
+                                            под заказ:
+                                        </div> 
+                                        <ul class="cart__items"> 
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                    <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+    
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                    <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                            <li class="dynamic_item row">
+                                                <a href="" class="dynamic_item-image">
+                                                    <span class="image-container is-square">
+                                                    <img src="https://static-ru.insales.ru/images/products/1/1317/312952101/medium_technics-05.jpg">
+                                                    </span>
+                                                </a>
+                                                <div class="dynamic_item-info col"> 
+                                                    <a href="#" class="dynamic_item-title">
+                                                        Демо-товар 4 (средний)
+                                                    </a>
+                                                    <div class="dynamic_item-quantity">
+                                                    15990.00 
+                                                    </div>  
+                                                </div>
+                                                <i class="close">
+                                                    
+                                                </i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                    <a href="/cart_items" class="button_light__wrap">
+                                        <div class="button_light__title">перейти в корзину</div> 
+                                        <div class="button_light__square">
+                                            <div class="svg_wrap">
+                                                <svg class="icon arrow-right">
+                                                    <use xlink:href="#arrow-right">
+                                                    </use>
+                                                </svg>
+                                            </div> 
+                                        </div>  
+                                    </a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-bttn bttn__search">
+                        <svg class="icon search">
+                            <use xlink:href="#search-icon"></use>
+                        </svg>
+                        <div class="submenu__content">
+                            <div class="submenu__content_wrap">  
+                                <form action="/search" method="get" class=" search_widget hero_search">
+                                    <div class="search-collections" data-toggle-search-collection="true">
+                                        <div class="total">
+                                            <span>Страница</span>
+                                            <svg class="icon arrow-down">
+                                                <use xlink:href="#arrow-d"></use>
+                                            </svg>
+                                            <div class="drop-search" style="">
+                                                <a href="index.html" data-search-collection="1">Главная</a>
+                                                <a href="catalog.html" data-search-collection="2">Каталог</a>
+                                                <a href="tovar.html" data-search-collection="3">Товар</a>
+                                                <a href="tovar2.html" data-search-collection="3">Товар</a>
+                                                <a href="cart.html" data-search-collection="4">Корзина</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inpt-group">
+                                        <input type="text" autocomplete="off" class="inpt-control inpt search_widget-control" name="q" value="" placeholder="Каталог промышленной техники и оборудования" data-search-field="" inprocess="false">
+                                        <button type="submit" class="search_widget-submit circle-effect">
+                                            <svg class="icon search-icon">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        <span class="after"></span>
+                                    </button>
+                                    </div>
+                                    <input type="hidden" name="lang" value="ru">
+                                    <div class="search_widget-result">
+                                        <div data-search-result="" class="search_widget-result-inner"></div>
+                                    </div>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bttn__delimitter"></div>
+                    <div class="side-bttn bttn__email">
+                        <svg class="icon email">
+                            <use xlink:href="#email-icon"></use>
+                        </svg>
+                        <div class="submenu__content">
+                            <div class="submenu__content_wrap">   
+                                <a class="email-link" href="mailto:info@industry.expert">
+                                    info@industry.expert
+                                </a>  
+                                <span class="email-text">
+                                    По любым вопросам вы можете написать нам письмо — <br>
+                                    мы ответим в самые короткие сроки
+                                </span>
+                                <a href="#contacts" class="adress_wrap js-scrollIntoView">
+                                    <i class="svg_wrap">
+                                        <svg class="icon map-icon">
+                                            <use xlink:href="#map-icon"></use>
+                                        </svg>
+                                    </i>
+                                    <span class="adress-text">
+                                        Также ищите нас на карте, <br>
+                                        будем рады увидеть вас в гостях
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-bttn bttn__phone">
+                        <svg class="icon phone">
+                            <use xlink:href="#phone-icon"></use>
+                        </svg> 
+                        <div class="submenu__content">
+                            <div class="submenu__content_wrap">   
+                                <a class="tel-link" href="tel:+7 990 123 45 67">
+                                    +7 990 123 45 67
+                                </a>  
+                                <div class="tel-subtext">
+                                    10:00 — 23:00 Без выходных
+                                </div>
+                                <span class="tel-text">
+                                    По любым вопросам вы можете заказать обратный звонок — <br>
+                                    ваш персональный менеджер поможет подобрать идеальное решение для любых задач:
+
+                                </span> 
+                                <form action="get"> 
+                                    <div class="co-input co-input--text">
+                                        <div class="co-input-text">
+                                            <input placeholder="Ваш телефон"
+                                                type="password" name="password"
+                                                id="password"
+                                                class="co-input-field js-input-field"
+                                                required="required">
+                                        </div>
+                                    </div>
+                                    <div class="co-form-controls"> 
+                                        <button class="button_light__wrap co-button co-form-button js-co-login-submit"  name="commit" type="submit">
+                                            <div class="button_light__title">Войти</div> 
+                                            <div class="button_light__square">
+                                                <div class="svg_wrap">
+                                                    <svg class="icon arrow-right">
+                                                        <use xlink:href="#arrow-right">
+                                                        </use>
+                                                    </svg>
+                                                </div> 
+                                            </div>  
+                                        </button> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                </nav>
+                <div class="icon-group bottom-group col"> 
+                    <a href="#main-wrapper" class="side-bttn button_to-top js-scrollIntoView">
+                        <svg class="icon arrow-down to-top">
+                            <use xlink:href="#arrow-d"></use>
+                        </svg>
+                        <span class="text text_vertical">
+                            наверх
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <nav id="menu" data-site-title="industry-expert"
+                mm-spn-item-height="0">
+                <ul>
+                    <a href="/" class="logotype in-mobile">
+                        <img src="assets/logo-Site.svg" alt="">
+                    </a>
+                    <li class="menu__link link-other">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Каталог</a>
+                    </li> 
+                    <li>
+                        <a href="tovar.html">Товар</a>
+                        <ul>
+                            <li>
+                                <a href="tovar2.html">Товар линия</a>
+                            </li>  
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="cart.html">Корзина</a>
+                    </li> 
+                    <div class="mobile_menu-footer">
+                        <div class="search-widget in-mobile">
+                            <form action="/search" method="get"
+                                class="search_widget">
+                                <div class="inpt-group">
+                                    <input type="text" autocomplete="off"
+                                        class="inpt-control inpt search_widget-control"
+                                        name="q" value="" placeholder="Поиск"
+                                        data-search-field="" inprocess="false">
+
+                                    <a href="#" class="medium-icon search">
+                                        <i class="icon-svg"></i>
+                                    </a>
+                                </div>
+                                <input type="hidden" name="lang" value="ru">
+                            </form>
+
+                        </div>
+                        <div class="mobile_menu-phone">
+                        </div>
+                        <div class="mobile_menu-social">
+                        </div>
+
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="main-wrapper" id="main-wrapper">
+                <section class="header_lines">
+                    <div class="container header_common">
+                        <div class="cell-6 header_common_left show-flex flex-middle">
+                            <div class="carousel__title_wrap show-flex flex-start">
+                                <div class="svg_wrap">
+                                    <svg class="icon logo-b">
+                                        <use xlink:href="#logo-b"></use>
+                                    </svg>
+                                </div>
+                                <span class="right-words">
+                                    Лучшее решение <br>
+                                    для вашей отрасли
+                                </span>
+                            </div>
+                            <div class="section-title_wrap grid__control">
+                                <h3 class="section-title">Корзина</h3>
+                            </div>
+                        </div>
+                        <div class="cell-6 header_common_right corner_right show-flex flex-end flex-middle">
+                            <div class="lang-widget"> 
+                                <a href="?lang=en" data-this-url="true"
+                                    class="">eng</a>
+                                <a href="?lang=ru" data-this-url="true"
+                                    class="active">ru</a> 
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section class="broadcrumb">
+                    <div class="container">
+                        <div class="breadcrubms is-cart">
+                            <ul class="breadcrubms__list">
+                                <li class="breadcrumb__item home">
+                                    <a class="breadcrumb-link" title="Каталог" href="#">
+                                        Каталог
+                                    </a>
+                                </li> 
+                                <li class="breadcrumb__item">
+                                    <span class="breadcrumb-link current-page">
+                                        Корзина
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="cart_section"> 
+                    <div class="cart__main-wrap container">
+                        <div class="cart-empty hide">
+                            <div class="notice notice-info" data-empty-cart-notice="">
+                                Корзина пуста
+                            </div>
+                        </div> 
+                        <form class="" action="/cart_items" method="post" data-cart-form="" data-cart-form-inited="true"> 
+                            <div class="row"> 
+                                <div class="cart__items_col col order_now"> 
+                                    <div class="col__label"> 
+                                        В вашей корзине <a class="color_main" href="#">4 товара</a>,<br>
+                                        которые вы можете приобрести прямо сейчас:
+                                    </div> 
+                                    <ul class="item__list col"> 
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a>
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                    </div>
+                                                </div> 
+                                                <div class="price-and-quantity col"> 
+                                                    <div class="price_wrap col"> 
+                                                        <b class="price">
+                                                        <span data-product-price="">1 190 000 р.</span>  
+                                                        </b>
+                                                    </div> 
+                                                    <div data-quantity="" class="item__quantity is-cart" data-quantity-change-init="true">
+                                                        <div class="quantity-controls">
+                                                            <button data-quantity-change="-1" class="quantity-control bttn-count"> 
+                                                                &minus;
+                                                            </button> 
+                                                            <input class="quantity-input" type="text" name="cart[quantity][316552381]" value="1"> 
+                                                            <button data-quantity-change="1" class="quantity-control bttn-count"> 
+                                                                &#43;
+                                                            </button>
+                                                        </div>
+                                                    </div> 
+                                                    <b class="item__price_total" data-cartman-item-total-price="">1 190 000 р.</b>
+                                                </div> 
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a>
+                                                    
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                    </div>
+                                                </div> 
+                                                <div class="price-and-quantity col"> 
+                                                    <div class="price_wrap col">
+                                                        <s class="price_old">3 190 000</s>
+                                                        <b class="price">
+                                                        <span data-product-price="">1 190 000 р.</span>  
+                                                        </b>
+                                                    </div> 
+                                                    <div data-quantity="" class="item__quantity is-cart" data-quantity-change-init="true">
+                                                        <div class="quantity-controls">
+                                                            <button data-quantity-change="-1" class="quantity-control bttn-count"> 
+                                                                &minus;
+                                                            </button> 
+                                                            <input class="quantity-input" type="text" name="cart[quantity][316552381]" value="1"> 
+                                                            <button data-quantity-change="1" class="quantity-control bttn-count"> 
+                                                                &#43;
+                                                            </button>
+                                                        </div>
+                                                    </div> 
+                                                    <b class="item__price_total" data-cartman-item-total-price="">1 190 000 р.</b>
+                                                </div> 
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a> 
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                    </div>
+                                                </div> 
+                                                <div class="price-and-quantity col"> 
+                                                    <div class="price_wrap col"> 
+                                                        <b class="price">
+                                                        <span data-product-price="">1 190 000 р.</span>  
+                                                        </b>
+                                                    </div> 
+                                                    <div data-quantity="" class="item__quantity is-cart" data-quantity-change-init="true">
+                                                        <div class="quantity-controls">
+                                                            <button data-quantity-change="-1" class="quantity-control bttn-count"> 
+                                                                &minus;
+                                                            </button> 
+                                                            <input class="quantity-input" type="text" name="cart[quantity][316552381]" value="1"> 
+                                                            <button data-quantity-change="1" class="quantity-control bttn-count"> 
+                                                                &#43;
+                                                            </button>
+                                                        </div>
+                                                    </div> 
+                                                    <b class="item__price_total" data-cartman-item-total-price="">1 190 000 р.</b>
+                                                </div> 
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a>
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                    </div>
+                                                </div> 
+                                                <div class="price-and-quantity col"> 
+                                                    <div class="price_wrap col">
+                                                        <s class="price_old">3 190 000</s>
+                                                        <b class="price">
+                                                        <span data-product-price="">1 190 000 р.</span>  
+                                                        </b>
+                                                    </div> 
+                                                    <div data-quantity="" class="item__quantity is-cart" data-quantity-change-init="true">
+                                                        <div class="quantity-controls">
+                                                            <button data-quantity-change="-1" class="quantity-control bttn-count"> 
+                                                                &minus;
+                                                            </button> 
+                                                            <input class="quantity-input" type="text" name="cart[quantity][316552381]" value="1"> 
+                                                            <button data-quantity-change="1" class="quantity-control bttn-count"> 
+                                                                &#43;
+                                                            </button>
+                                                        </div>
+                                                    </div> 
+                                                    <b class="item__price_total" data-cartman-item-total-price="">1 190 000 р.</b>
+                                                </div> 
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="cart__foot row flex-middle flex-between"> 
+                                        <span class="cart__text_gray"> Итоговая сумма: </span>
+                                        <div class="cart__total"> 
+                                            <b data-cartman-total-price="">6 290 000 р.</b>
+                                        </div>
+                                    </div>
+                                    <div class="cart__button">
+                                        <a class="button_light__wrap" href="#">
+                                            <span class="button_light__title">
+                                                оплатить и оставить заявку на остальные проекты
+                                            </span>
+                                            <div class="button_light__square">
+                                                <div class="svg_wrap">
+                                                    <svg class="icon arrow-right">
+                                                        <use xlink:href="#arrow-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cart__items_col col order_later">
+                                    <div class="col__label"> 
+                                        А также <a class="color_main" href="#">3 товара</a> <br>
+                                        под заказ:
+                                    </div>
+                                    <ul class="item__list col"> 
+                                        
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a>
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                        <div class="order_ready">
+                                                            <span> 
+                                                                Срок изготовления
+                                                                <b>
+                                                                    10 дней
+                                                                </b>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a> 
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                        <div class="order_ready">
+                                                            <span> 
+                                                                Срок изготовления
+                                                                <b>
+                                                                    10 дней
+                                                                </b>
+                                                            </span>
+                                                        </div>
+                                                    </div> 
+                                                </div>  
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="item__wrap" data-item-accessory="" data-product-id="" data-item-id=""> 
+                                            <div class="item row"> 
+                                                <div class="item__img_wrap">
+                                                    <a class="image-container is-square" href="/product/demo-tovar-3?variant_id=316552381">
+                                                        <img class="item__img" src="https://static-ru.insales.ru/images/products/1/1312/312952096/medium_cosmetics-02.jpg">
+                                                    </a>
+                                                </div>  
+                                                <div class="item__info_wrap col">
+                                                    <a class="item__link" href="#">Роторная дробилка
+                                                        серии PFW
+                                                    </a>
+                                                    <div class="artic__wrap row"> 
+                                                        <span class="item__artic">Артикул 3001</span> 
+                                                    </div>
+                                                </div> 
+                                                <div class="price-and-quantity col"> 
+                                                    <div class="price_wrap col">
+                                                        <s class="price_old">3 190 000</s>
+                                                        <b class="price">
+                                                        <span data-product-price="">1 190 000 р.</span>  
+                                                        </b>
+                                                    </div> 
+                                                    <div data-quantity="" class="item__quantity is-cart" data-quantity-change-init="true">
+                                                        <div class="quantity-controls">
+                                                            <button data-quantity-change="-1" class="quantity-control bttn-count"> 
+                                                                &minus;
+                                                            </button> 
+                                                            <input class="quantity-input" type="text" name="cart[quantity][316552381]" value="1"> 
+                                                            <button data-quantity-change="1" class="quantity-control bttn-count"> 
+                                                                &#43;
+                                                            </button>
+                                                        </div>
+                                                    </div> 
+                                                    <b class="item__price_total" data-cartman-item-total-price="">1 190 000 р.</b>
+                                                </div> 
+                                                <button class="bttn-delete-item item-delete text-center hide-s-only" type="button" title="Удалить товар" data-item-delete="">
+                                                    <i class="close"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="cart__foot row flex-middle flex-between"> 
+                                        <span class=""> 
+                                            Рассчитать итоговую сумму вашего проекта вам поможет персональный менеджер. <br>
+                                            Для этого вам нужно всего лишь оставить заявку на сайте в один клик!
+                                        </span> 
+                                    </div>
+                                    
+                                    <div class="cart__button">
+                                        <a class="button_light__wrap" href="#">
+                                            <span class="button_light__title">
+                                                оставить заявку на все проекты
+                                            </span>
+                                            <div class="button_light__square">
+                                                <div class="svg_wrap">
+                                                    <svg class="icon arrow-right">
+                                                        <use xlink:href="#arrow-right"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section> 
+            </div>
+        </div>
+
+        <footer class="SiteFooter">  
+                <!-- только корзина -->
+                <section class="callback container">
+                    <div class="container big-words" data-bg-text="идеальные решения">
+                        <h3 class="section-title">ваши идеальные решения</h3>
+                    </div>
+                    <div class="callback__frame push-3 post-3 cell-6">
+                        <div class="callback__block col flex-center flex-middle">
+                            <span class="callback__text">
+                                Если вы все же не уверены в выборе, <br>
+                                закажите обратный звонок — ваш персональный менеджер поможет подобрать идеальное решение для любых задач: 
+                            </span>
+                            <form class="callback__form feedback js-feedback" action="/client_account/feedback" method="post">
+                                <div class="feedback-row is-required" data-feedback-field="">
+                                    <div class="feedback-field-wrap">
+                                      <input placeholder="Ваш телефон" name="phone" type="text" class="feedback-field inpt text-field">
+                                    </div>
+                                </div>
+                                <div class="feedback-row">  
+                                    <button class="button_light__wrap co-button co-form-button js-co-login-submit" name="commit" type="submit">
+                                        <div class="button_light__title">заказать звонок</div> 
+                                        <div class="button_light__square">
+                                            <div class="svg_wrap">
+                                                <svg class="icon arrow-right">
+                                                    <use xlink:href="#arrow-right">
+                                                    </use>
+                                                </svg>
+                                            </div> 
+                                        </div>  
+                                    </button>
+                                </div>
+                            </form>
+                        </div> 
+                    </div> 
+                    <div class="contacts__social show-flex flex-middle flex-center">
+                        <ul class="social-menu">
+                            <img class="zaglushka" src="images/soc.png" alt="">
+                            <li class="social-menu-item">
+                                <a href="" class="social-menu-link">
+                                    <svg class="icon is-instagram">
+                                        <use xlink:href="#is-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-menu-item">
+                                <a href="" class="social-menu-link">
+                                    <svg class="icon is-facebook">
+                                        <use xlink:href="#is-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-menu-item">
+                                <a href="" class="social-menu-link">
+                                    <svg class="icon is-vk">
+                                        <use xlink:href="#is-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </section>
+            <div class="SiteFooter_addLinks container">
+                <div class="row">
+                    <ul class="addLinks__column cell-4">
+                        <li class="addLinks__link"><a
+                                href="/page/oformlenie-zakaza">Оформление
+                                заказа</a>
+                        </li>
+                        <li class="addLinks__link"><a
+                                href="/page/delivery">Доставка
+                                товара</a></li>
+                        <li class="addLinks__link"><a
+                                href="/page/payment">Способ
+                                оплаты</a></li>
+                        <li class="addLinks__link"><a
+                                href="/page/exchange">Условия
+                                обмена и возврата</a></li>
+                    </ul>
+                    <ul class="addLinks__column cell-4">
+                        <li class="addLinks__link"><a
+                                href="/page/oformlenie-zakaza">Оформление
+                                заказа</a>
+                        </li>
+                        <li class="addLinks__link"><a
+                                href="/page/delivery">Доставка
+                                товара</a></li>
+                        <li class="addLinks__link"><a
+                                href="/page/payment">Способ
+                                оплаты</a></li>
+                        <li class="addLinks__link"><a
+                                href="/page/exchange">Условия
+                                обмена и возврата</a></li>
+                    </ul>
+                    <ul class="addLinks__column cell-4">
+                        <li class="addLinks__link"><a
+                                href="/page/oformlenie-zakaza">Оформление
+                                заказа</a>
+                        </li>
+                        <li class="addLinks__link"><a
+                                href="/page/delivery">Доставка
+                                товара</a></li>
+                        <li class="addLinks__link"><a
+                                href="/page/payment">Способ
+                                оплаты</a></li>
+                        <li class="addLinks__link"><a
+                                href="/page/exchange">Условия
+                                обмена и возврата</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="SiteFooter_copy container">
+                <div class="row">
+                    <div class="cell-6">
+                        <svg class="icon logo-b">
+                            <use xlink:href="#logo-b"></use>
+                        </svg>
+                    </div>
+                    <div class="col cell-6">
+                        <div class="show-flex flex-bottom flex-end pay">
+                            <img src="images/pay.png" alt="">
+                        </div>
+                        <div class="show-flex flex-bottom flex-end copy">
+                            2020© Industry Expert. Все права защищены
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="hidden-icons">
+            <div style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <symbol id="logo-b" xmlns="http://www.w3.org/2000/svg"
+                        width="239" height="46" viewBox="0 0 239 46">
+                        <g>
+                            <g>
+                                <path
+                                    d="M13.892 13.424h4.767v19.683h-4.767zm16.978 0h4.07v19.683h-4.795l-4.098-12.824v12.824h-4.015V13.424h4.712l4.126 12.77zm18.846 1.143c.836.763 1.254 1.98 1.254 3.652v10.149c0 1.859-.427 3.112-1.282 3.763-.855.65-2.184.976-3.987.976h-7.388V13.424h7.667c1.654 0 2.9.382 3.736 1.143zm-3.541 4.043c0-.65-.135-1.11-.404-1.38-.27-.27-.73-.404-1.38-.404h-1.45v12.88h1.478c.65 0 1.105-.116 1.366-.35.26-.231.39-.672.39-1.323zm15.417-5.186h4.767v14.163c0 .948-.07 1.738-.21 2.37a4.847 4.847 0 0 1-.821 1.798c-.41.567-1.032.985-1.869 1.255-.836.269-1.895.404-3.178.404-2.36 0-4.005-.442-4.934-1.325-.93-.882-1.394-2.188-1.394-3.917V13.424h4.74v14.832c0 1.171.501 1.756 1.505 1.756.52 0 .882-.148 1.087-.446.204-.297.307-.734.307-1.31zM80.73 24.966c.326.595.488 1.562.488 2.9 0 .408-.014.77-.041 1.087a8.207 8.207 0 0 1-.182 1.087 3.72 3.72 0 0 1-.39 1.045 4.45 4.45 0 0 1-.71.893 3.749 3.749 0 0 1-1.102.753c-.428.194-.967.353-1.617.473s-1.376.182-2.175.182c-2.936 0-4.814-.734-5.631-2.202-.353-.67-.53-1.738-.53-3.207v-1.17h4.712v1.56c0 1.042.464 1.562 1.394 1.562 1.003 0 1.505-.455 1.505-1.366 0-.8-.084-1.334-.25-1.603-.168-.27-.68-.711-1.534-1.324l-2.844-2.064c-.093-.074-.27-.199-.53-.376-.26-.176-.441-.301-.543-.377a7.567 7.567 0 0 1-.46-.376c-.205-.176-.344-.33-.418-.46-.075-.13-.182-.31-.321-.544a2.169 2.169 0 0 1-.279-.71c-.046-.242-.093-.53-.14-.865a8.111 8.111 0 0 1-.069-1.115c0-2.1.441-3.573 1.324-4.418.883-.846 2.486-1.27 4.81-1.27 1.021 0 1.886.094 2.592.28.707.185 1.25.418 1.631.697.38.278.674.673.878 1.184.205.512.33.99.377 1.436.046.446.07 1.042.07 1.784v1.032h-4.49V18.08c0-.575-.083-.993-.25-1.254-.167-.26-.53-.39-1.087-.39-.781 0-1.171.483-1.171 1.45v.724c0 .65.297 1.18.892 1.589l4.042 2.816c1.041.706 1.724 1.357 2.05 1.951zm1.296-11.542h12.658v3.43h-3.931v16.253h-4.824V16.853h-3.903zm26.234 17.537c0 .93.224 1.644.67 2.146h-4.377c-.39-.614-.586-1.589-.586-2.928v-3.178c0-.985-.121-1.611-.362-1.882-.242-.269-.864-.404-1.868-.404h-.864v8.392h-4.461V13.424h6.719c1.765 0 3.02.307 3.763.92.892.725 1.339 2.1 1.339 4.126 0 1.283-.177 2.198-.53 2.746-.353.549-1.004 1.083-1.952 1.603.985.28 1.635.624 1.952 1.032.241.298.394.65.46 1.06.065.408.097 1.031.097 1.867zm-4.293-12.1c0-.893-.107-1.454-.32-1.687-.214-.232-.656-.348-1.325-.348h-1.45v4.516h1.478c.725 0 1.175-.163 1.352-.488.177-.325.265-.99.265-1.993zm14.609-5.437h4.767l-4.906 12.77v6.913h-4.656v-6.914l-4.684-12.769h4.684l2.397 8.698zm38.197 19.683h-10.175V13.424h10.175v3.458h-5.408v4.544h5.102v3.457h-5.102v4.74h5.408zm4.684-10.427l-3.54-9.256h4.794l1.952 6.33 1.896-6.33h4.74l-3.486 9.256 3.485 10.427h-4.85l-1.785-7.527-1.812 7.527h-4.795zm16.56 10.427h-4.74V13.424h8.475c1.58 0 2.653.353 3.22 1.06.567.706.85 1.672.85 2.9v4.683c0 1.413-.357 2.407-1.073 2.983-.715.576-1.705.864-2.969.864h-3.764zm0-10.65h1.784c.483 0 .845-.093 1.087-.278.241-.186.38-.387.418-.6.037-.214.056-.544.056-.99V18.08c0-.52-.13-.869-.39-1.045-.26-.177-.66-.265-1.2-.265h-1.756zm20.574 10.65h-10.176V13.424h10.176v3.458h-5.409v4.544h5.102v3.457h-5.101v4.74h5.408zm7.026 0h-4.461V13.424h6.719c1.765 0 3.02.307 3.763.92.893.725 1.339 2.1 1.339 4.126 0 1.283-.177 2.198-.53 2.746-.353.549-1.004 1.083-1.952 1.603.985.28 1.636.624 1.952 1.032.241.298.395.65.46 1.06.065.408.098 1.031.098 1.867v4.183c0 .93.223 1.644.669 2.146h-4.377c-.39-.614-.586-1.589-.586-2.928v-3.178c0-.985-.121-1.612-.362-1.882-.242-.269-.864-.404-1.868-.404h-.864zm0-11.765h1.477c.725 0 1.175-.163 1.352-.488.177-.325.265-.99.265-1.993 0-.893-.107-1.454-.32-1.687-.214-.232-.656-.348-1.325-.348h-1.45zm12.378-4.489h-3.903v-3.429h12.657v3.43h-3.931v16.253h-4.823zM239 0v46H0V0zm-107 41V5H5v36zM234 5h-97v36h97z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="arrow-d" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="11" viewBox="0 0 16 11">
+                        <g>
+                            <g>
+                                <path
+                                    d="M.6 3.024L3.075.55 8 5.475 12.925.55 15.4 3.024l-4.926 4.925.026.025-2.475 2.475L8 10.424l-.025.025L5.5 7.974l.025-.025z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="search" xmlns="http://www.w3.org/2000/svg"
+                        width="22" height="22" viewBox="0 0 22 22">
+                        <g>
+                            <g>
+                                <path
+                                    d="M9.375.312a9.062 9.062 0 0 1 7.643 13.934l4.713 4.712a.98.98 0 0 1 0 1.387l-1.386 1.385a.98.98 0 0 1-1.386 0l-4.712-4.712A9.062 9.062 0 1 1 9.375.313zM3.906 9.375a5.469 5.469 0 1 0 10.938 0 5.469 5.469 0 0 0-10.938 0z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="hero-arrow" xmlns="http://www.w3.org/2000/svg"
+                        width="18" height="24" viewBox="0 0 18 24">
+                        <g>
+                            <g>
+                                <path
+                                    d="M.6 15.024l2.475-2.475L7 16.474V0h4v16.474l3.925-3.925 2.475 2.475-5.925 5.925.025.025-2.475 2.475L9 23.424l-.025.025L6.5 20.974l.025-.025z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="close-cross" xmlns="http://www.w3.org/2000/svg"
+                        width="13" height="13" viewBox="0 0 13 13">
+                        <g>
+                            <g>
+                                <path
+                                    d="M1.136 1.843l.707-.707a1 1 0 0 1 1.414 0L6.5 4.379l3.243-3.243a1 1 0 0 1 1.414 0l.707.707a1 1 0 0 1 0 1.414L8.62 6.5l3.243 3.242a1 1 0 0 1 0 1.415l-.707.707a1 1 0 0 1-1.414 0L6.5 8.62l-3.243 3.243a1 1 0 0 1-1.414 0l-.707-.707a1 1 0 0 1 0-1.415L4.379 6.5 1.136 3.257a1 1 0 0 1 0-1.414z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg"
+                        width="10" height="15" viewBox="0 0 10 15">
+                        <g>
+                            <g>
+                                <path
+                                    d="M2.525 14.899L.05 12.424l4.925-4.925L.05 2.574 2.525.1 7.45 5.024l.025-.025L9.95 7.474l-.025.025.025.025-2.475 2.475-.025-.025z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg"
+                        width="18" height="24" viewBox="0 0 18 24">
+                        <g>
+                            <g>
+                                <path
+                                    d="M.6 15.024l2.475-2.474L7 16.475V0h4v16.474l3.925-3.924 2.475 2.474-5.925 5.925.025.025-2.475 2.475L9 23.424l-.025.025L6.5 20.974l.025-.025z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="check" xmlns="http://www.w3.org/2000/svg"
+                        width="12" height="10" viewBox="0 0 12 10">
+                        <g>
+                            <g>
+                                <path
+                                    d="M2.013 2.796L-.064 4.89l4.452 4.641 7.42-7.335L9.73-.05l-5.342 5.39z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="news-date" xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" viewBox="0 0 20 20">
+                        <g>
+                            <g>
+                                <path
+                                    d="M10.21.475C15.59.475 20 4.827 20 10.209c0 5.381-4.409 9.79-9.79 9.79C4.826 20 .475 15.59.475 10.21A9.726 9.726 0 0 1 10.209.475zm-8.704 9.734c0 4.866 3.894 8.76 8.703 8.76a8.724 8.724 0 0 0 8.76-8.76c0-4.81-3.893-8.703-8.76-8.703a8.699 8.699 0 0 0-8.703 8.703zm8.703-7.844c4.352 0 7.902 3.55 7.902 7.844 0 4.351-3.55 7.9-7.902 7.9-4.294 0-7.844-3.549-7.844-7.9 0-4.294 3.55-7.844 7.844-7.844zm-.63 6.813l-2.06-1.66-.516.63 2.061 1.66c0 .114-.057.286-.057.4 0 .688.572 1.26 1.202 1.26h.115l1.374 3.379.687-.287-1.374-3.435c.286-.23.458-.515.458-.916 0-.63-.573-1.203-1.26-1.203-.229 0-.458.058-.63.172zm1.088 1.03c0 .287-.171.459-.458.459-.229 0-.4-.172-.4-.458 0-.23.171-.401.4-.401.287 0 .458.172.458.4zm6.585-.343h-1.775v.745h1.775zm-6.642 7.386v-1.774h-.744v1.774zM9.866 3.223v1.718h.744V3.223zM3.224 10.61h1.718v-.745H3.224z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="map-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="52" height="53" viewBox="0 0 52 53">
+                        <g>
+                            <g>
+                                <path
+                                    d="M52 51.297c0 .183-.043.362-.125.525a1.154 1.154 0 0 1-1.554.512l-16.06-8.158-16.06 8.158a1.148 1.148 0 0 1-1.044 0L.574 43.911a1.163 1.163 0 0 1-.635-1.037V1.317c0-.182.043-.362.125-.525A1.155 1.155 0 0 1 1.618.28l16.06 8.158L33.739.28a1.154 1.154 0 0 1 1.045 0l16.582 8.424c.39.198.635.599.635 1.037zm-2.314-40.842L35.417 3.207v9.922l11.605 13.7 2.664-1.26zM24 46.783l1.856-12.81-7.02-1.13v16.564zm9.105-43.576l-14.269 7.248V30.49l14.269 2.295zm-6.58 42.294l6.58-3.342v-7.02l-4.964-.8zm8.893-13.185l9.435-4.461-9.435-11.139zM2.253 3.207v8.68l14.269 16.485V10.455zm0 12.223v13.829l7.363-5.323zm0 26.729l14.269 7.248V31.914l-5.381-6.216-8.888 6.425zm47.433 7.248V28.14l-14.269 6.746v7.274z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <!-- is-instagram
+                    is-facebook
+                    is-vk -->
+                    <symbol id="burger-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="22" height="22" viewBox="0 0 22 22"
+                        preserveAspectRatio="xMidYMid">
+                        <g>
+                            <g>
+                                <path d="M22-.001v22H0V0zm-4 4H4v14h14z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="login-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMinYMid">
+                        <g>
+                            <g>
+                                <path
+                                    d="M24 22.498v1.5H0v-1.5c0-4.914 2.973-9.143 7.213-10.997A6.724 6.724 0 0 1 5.25 6.75 6.758 6.758 0 0 1 12-.001a6.758 6.758 0 0 1 6.75 6.75c0 1.853-.75 3.532-1.963 4.753C21.027 13.355 24 17.584 24 22.498zM8.25 6.75A3.755 3.755 0 0 0 12 10.5a3.755 3.755 0 0 0 3.75-3.75A3.755 3.755 0 0 0 12 2.999a3.755 3.755 0 0 0-3.75 3.75zM3.105 20.999H20.83c-.715-4.266-4.48-7.5-8.905-7.5-4.393 0-8.053 3.17-8.82 7.5z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="compares-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="22" height="22" viewBox="0 0 22 22"
+                        preserveAspectRatio="xMinYMid">
+                        <g>
+                            <g>
+                                <path
+                                    d="M18 4h4v18h-4zM9 0h4v22H9zM0 10h4v12H0z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="cart-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="25" height="24" viewBox="0 0 25 24"
+                        preserveAspectRatio="xMinYMid">
+                        <g>
+                            <g>
+                                <path
+                                    d="M24.257 22.298c.054.403-.08.834-.377 1.157-.297.323-.702.51-1.133.51H1.5c-.432 0-.836-.187-1.133-.51a1.48 1.48 0 0 1-.377-1.157L1.5 7.142a1.52 1.52 0 0 1 1.51-1.373h3.505a5.6 5.6 0 0 1 5.608-5.6 5.6 5.6 0 0 1 5.609 5.6h3.478c.782 0 1.43.592 1.51 1.373zM8.645 5.769h6.957a3.484 3.484 0 0 0-3.479-3.472 3.484 3.484 0 0 0-3.478 3.472zm12.35 15.155L19.78 8.811h-2.103v2.127a1.052 1.052 0 0 1-2.103 0V8.81H8.59v2.127a1.07 1.07 0 0 1-1.051 1.05 1.052 1.052 0 0 1-1.052-1.05V8.81H4.385L3.172 20.924z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="search-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="22" height="22" viewBox="0 0 22 22"
+                        preserveAspectRatio="xMinYMid">
+                        <g>
+                            <g>
+                                <path
+                                    d="M9.375.312a9.062 9.062 0 0 1 7.643 13.934l4.713 4.712a.98.98 0 0 1 0 1.386l-1.386 1.386a.98.98 0 0 1-1.386 0l-4.712-4.712A9.063 9.063 0 1 1 9.375.313zM3.906 9.375a5.469 5.469 0 1 0 10.938 0 5.469 5.469 0 0 0-10.938 0z" />
+                            </g>
+                        </g>
+                    </symbol>
+                    <symbol id="email-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" preserveAspectRatio="xMinYMid">
+                        <g><g><path d="M18 20.999l-8.326 4.78c-.173.088-.37.134-.567.134h-.005c-.33-.001-.64-.13-.873-.363C7.997 25.318 7.998 24.327 8 24v-3H0v-21h26v21zm-8-3c.666.002.997.298 1 1v2l6-3h6V7.974l-9.2 5.396a1.255 1.255 0 0 1-1.177 0L3 7.726V18zM3 3v1.953l10.211 5.965L23 5.199V3z"/></g></g>
+                    </symbol>
+
+                    <symbol id="phone-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="22" height="35" viewBox="0 0 22 35"
+                        preserveAspectRatio="xMinYMid">
+                        <g>
+                            <g>
+                                <path
+                                    d="M22-.001v35H0V0zm-3 5H3v23h16zm-4 25H7v2h8zm0-28H7v2h8z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="shield-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="31" viewBox="0 0 24 31">
+                        <g>
+                            <g>
+                                <path
+                                    d="M23.744 4.263v8.832c0 7.485-4.452 14.221-11.279 17.215l-.593.3-.594-.3C4.452 27.466 0 20.58 0 13.095V4.263l.742-.45c7.865-4.34 15.433-4.191 22.26 0zM20.776 6.06c-5.64-3.144-11.427-3.144-17.808 0v7.036c0 6.137 3.413 11.677 8.904 14.221 5.49-2.544 8.904-8.084 8.904-14.22zm-10.388 9.282l5.342-5.39 2.078 2.246-7.42 7.335-4.452-4.64 2.077-2.096z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="shield2-icon" width="55" height="70"
+                        viewBox="0 0 55 70">
+                        <g>
+                            <g>
+                                <path fill="#efefef"
+                                    d="M54.9 8.671v20.42c0 17.307-10.294 32.884-26.078 39.806l-1.373.692-1.372-.692C10.293 62.321 0 46.398 0 29.092V8.672l1.715-1.04c18.186-10.038 35.685-9.692 51.469 0zm-6.863 4.153c-13.039-7.27-26.42-7.27-41.175 0v16.268c0 14.191 7.892 26.998 20.587 32.883 12.696-5.885 20.588-18.692 20.588-32.883z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="zoom-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="31" height="31" viewBox="0 0 31 31">
+                        <g>
+                            <g>
+                                <path
+                                    d="M.723.405h3.5V.44h8.379v3.5H7.05l8.637 8.637.185-.185 8.452-8.45h-5.55V.44h8.38V.406h3.499v.035h.035v3.5h-.035v8.38h-3.5V6.769l-8.637 8.637.185.184 8.45 8.452.001-5.55h3.5v8.38h.035v3.5h-.035v.035h-3.5v-.036h-8.379v-3.5h5.552l-8.637-8.636-.185.184L7.05 26.87h5.55v3.5h-8.38v.035h-3.5v-.035H.688v-3.5h.035v-8.378l3.5-.001v5.551l8.636-8.636-.184-.185L4.224 6.77v5.55h-3.5V3.94H.688V.44h.035z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="pdf-icon" xmlns="http://www.w3.org/2000/svg"
+                        width="42" height="57" viewBox="0 0 42 57">
+                        <defs>
+                            <clipPath id="96q5a">
+                                <path fill="#fff" d="M2 2v53h38V12L30 2H2" />
+                            </clipPath>
+                        </defs>
+                        <g>
+                            <g>
+                                <path fill="none" stroke="#ffac63"
+                                    stroke-miterlimit="20" stroke-width="6"
+                                    d="M2 2v53h38v0-43 0L30 2v0H2v0"
+                                    clip-path="url(&quot;#96q5a&quot;)" />
+                            </g>
+                            <g>
+                                <path fill="#ffac63"
+                                    d="M2 17h38v3H2zm0 22h38v3H2z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="ind-3" xmlns="http://www.w3.org/2000/svg"
+                        width="949" height="783" viewBox="0 0 949 783">
+                        <g>
+                            <g>
+                                <path fill="#011613"
+                                    d="M947.978 349.725v189.512l.305-.176v241.557l-.305-.311v2.262L753.815 669.98 568.037 777.634l-186.929-107.67-185.682 107.67L0 665.142V646.32l186.514 108.155v-24.197L0 622.123v-18.822l186.514 108.155v-24.197L0 579.104V560.28l186.514 108.156V644.24L0 536.085v-18.823l186.514 108.155v-24.196L0 493.066v-18.823l186.514 108.155v-24.197L0 450.046V215.738l186.514 108.155v-24.197L0 191.54v-18.823l186.514 108.155v-24.196L0 148.52V129.7l186.514 108.155v-24.196L0 105.502V86.68l186.514 108.155v-24.197L0 62.483V43.661l186.514 108.155v-24.197L0 19.464V.642l194.351 112.7 187.38-108.29L567.09 113.308 753.039 5.052l194.939 113.017v.814l.305.019v231.134zm-910.736-93.57L16.295 244.01v196.664l20.947 12.147zm37.242 21.596l-20.948-12.147V462.27l20.948 12.146zm37.241 21.596L90.778 287.2v196.664l20.947 12.147zm37.242 21.595l-20.947-12.146V505.46l20.947 12.146zm37.242 21.596L165.26 330.39v196.665l20.948 12.146zm186.513 313.466V459.297l-20.947 12.147v196.707zM335.481 677.6V480.893l-20.947 12.147v196.707zm-37.242 21.595V502.49l-20.947 12.147v196.706zm-37.242 21.596V524.084l-20.947 12.147v196.707zm-37.242 21.595V545.68l-20.946 12.147v196.706zM202.81 127.244V323.91l20.946-12.147V115.097zm37.241-21.595v196.664l20.947-12.147V93.502zm37.242-21.596v196.664l20.947-12.147V71.906zm37.242-21.596v196.665l20.947-12.147V50.31zm37.241-21.595v196.664l20.947-12.147V28.715zm20.962 203.33l-170.234 98.716v24.196l170.234-98.714zm0 43.02l-170.234 98.715v24.197l170.234-98.715zm0 43.019l-170.234 98.715v24.196l170.235-98.714zm0 43.02l-170.234 98.714v24.197l170.235-98.715zm0 43.018l-170.234 98.715v24.197l170.234-98.715v-9.242zm16.28 230.286v9.205l170.234 98.715v-24.197l-170.234-98.715zm0-33.814l170.234 98.715v-24.197l-170.234-98.715zm0-43.02l170.234 98.716V644.24l-170.234-98.715zm0-43.018l170.234 98.714v-24.196l-170.234-98.715zm0-310.43v8.905l170.234 98.715v-24.197l-170.195-98.692zm.015 27.736v196.664l20.947 12.147V256.156zm37.242 21.595V462.27l20.947 12.146V277.751zm37.241 21.596v196.664l20.948 12.147V299.347zm37.242 21.596V505.46l20.947 12.146V320.942zM538 330.39v196.665l20.947 12.146V342.538zM389.105 182.21l170.146 98.664v-24.196l-170.084-98.628zm.11-42.955l170.036 98.6v-24.196l-169.973-98.564zm.111-42.954l169.925 98.535v-24.197L389.39 72.14zm169.925 40.393v-9.074L389.499 29.184l-.062 24.16 169.814 98.472v-15.123zm0 430.583V558.2l-170.234-98.714v24.196l170.234 98.715v-15.123zm186.208 88.728V459.297l-20.946 12.147v196.707zM708.218 677.6V480.893l-20.947 12.147v196.707zm-37.242 21.595V502.49l-20.947 12.147v196.706zm-37.242 21.596V524.084l-20.947 12.147v196.707zm-37.241 21.595V545.68l-20.947 12.147v196.706zm-20.947-615.142V323.91l20.947-12.147V115.097zm37.241-21.595v196.664l20.947-12.147V93.502zm37.242-21.596v196.664l20.947-12.147V71.906zm37.242-21.596v196.665l20.947-12.147V50.31zm37.242-21.595v196.664l20.946-12.147V28.715zm20.962 203.33L575.24 342.909v24.196l170.234-98.714zm0 43.02L575.24 385.927v24.197l170.235-98.715zm0 43.019L575.24 428.946v24.196l170.235-98.714zm0 43.02L575.24 471.964v24.197l170.234-98.715zm0 43.018L575.24 514.984v24.197l170.234-98.715v-9.242zm186.514 184.952l-170.235-98.715v24.197l170.234 98.714zm0 43.019l-170.235-98.715v24.196l170.234 98.716zm0 43.019l-170.235-98.715v24.197l170.234 98.715zm-170.235-40.704v9.205l170.234 98.715v-24.197l-170.234-98.715v14.992zm-.002-430.623l.002-.002v9.248l170.234 98.715v-24.197L761.686 200.94zm.017 28.077v196.664l20.948 12.147V256.156zm37.242 21.595V462.27l20.947 12.146V277.751zm37.242 21.596v196.664l20.947 12.147V299.347zm37.241 21.596V505.46l20.948 12.146V320.942zm37.242 21.595v196.665l20.947 12.146V342.538zm-149.133-148.32l170.385 98.802v-24.196l-170.49-98.865zm-.188-43.129l170.573 98.912v-24.196l-170.68-98.974zm-.19-43.128l170.763 99.021v-24.197L761.12 71.555zm-.295-67.387l.107 24.258 170.952 99.13V127.62zm.824 431.06v24.196l170.235 98.715v-24.197z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="ind-4" xmlns="http://www.w3.org/2000/svg"
+                        width="779" height="779" viewBox="0 0 779 779">
+                        <g>
+                            <g>
+                                <path fill="#011613"
+                                    d="M750.21 429.56v-.003h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.767-.038.948 0 1.87-.013 2.767-.037zm.08.077c62.334 1.78 1.778 62.331 0 0zm-.08 0c-1.777 62.331-62.333 1.78 0 0zm0-.08c-62.334-1.774-1.777-62.331 0 0zm.08 0c1.777-62.331 62.334-1.774 0 0zm-.08 80.168v-.006h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.871.038 2.768h.002v.002l.024-.001h-.024c1.778-62.326 62.318-1.79.024 0 .887.024 1.8.037 2.737.037-.946 0-1.866.012-2.761.037v.006h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.871-.037-2.768h-.002v-.002l-.026.001a100.09 100.09 0 0 0-2.74-.037c.947 0 1.87-.012 2.766-.037zm0 .075c-1.778 62.324-62.316 1.796-.025 0h.026zm.08.002c62.333 1.78 1.78 62.329 0 0zm-.08-.083c-62.332-1.77-1.78-62.33 0 0zm0 80.168v-.003h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.003c.896.024 1.818.037 2.766.037a100.015 100.015 0 0 0-2.766.04h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.013 2.766-.037zm.08.077c62.334 1.777 1.777 62.334 0 0zm-.08 0c-1.777 62.338-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.777-62.338 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.08 80.164v-.002h.003c.025-.898.037-1.82.037-2.77 0 .95.013 1.872.038 2.77h.002v.002c.896.025 1.818.038 2.766.038a100.069 100.069 0 0 0-2.766.039h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.003v-.002a100.03 100.03 0 0 0-2.765-.037c.947 0 1.87-.013 2.766-.038zm.08.077c62.333 1.771 1.78 62.33 0 0zm-.08 0c-1.779 62.33-62.332 1.771 0 0zm0-.08c-62.333-1.783-1.777-62.334 0 0zm.08 0c1.778-62.334 62.334-1.783 0 0zm-.08 80.165v-.002h.003c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.012 2.766-.037zm.08.077c62.334 1.778 1.777 62.335 0 0zm-.08 0c-1.777 62.335-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.777-62.334 0 0zm.08 0c1.777-62.334 62.334-1.777 0 0zM670.05 429.56v-.003h.002c.025-.896.037-1.818.037-2.766a100 100 0 0 0 .038 2.766h.002v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002a100.02 100.02 0 0 0-.038 2.766c0-.948-.012-1.87-.037-2.766h-.003v-.002a99.994 99.994 0 0 0-2.769-.038c.949 0 1.872-.013 2.77-.037zm.079.077c62.328 1.782 1.771 62.33 0 0zm-.08 0c-1.784 62.33-62.333 1.78 0 0zm0-.08c-62.333-1.774-1.783-62.331 0 0zm.08 0c1.77-62.33 62.328-1.776 0 0zm-.08 80.168v-.002h.003c.025-.897.037-1.819.037-2.767 0 .948.013 1.87.038 2.767h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002a100.02 100.02 0 0 0-.038 2.766c0-.948-.012-1.87-.037-2.766h-.003v-.002a99.994 99.994 0 0 0-2.769-.038c.949 0 1.872-.012 2.77-.037zm.08.077c62.328 1.783 1.771 62.333 0 0zm-.08 0c-1.784 62.331-62.333 1.78 0 0zm0-.08c-62.333-1.774-1.783-62.334 0 0zm.08 0c1.77-62.333 62.329-1.776 0 0zm-.08 80.165v-.003h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.003c.896.024 1.818.037 2.766.037a100.034 100.034 0 0 0-2.766.04h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.038-2.769-.038.95 0 1.872-.013 2.77-.037zm.08.077c62.328 1.78 1.77 62.333 0 0zm-.08 0c-1.783 62.338-62.333 1.778 0 0zm0-.08c-62.334-1.777-1.783-62.338 0 0zm.08 0c1.77-62.337 62.329-1.78 0 0zm-.08 80.164v-.002h.003c.025-.898.037-1.82.037-2.77 0 .95.013 1.872.038 2.77h.002v.002c.896.025 1.818.038 2.766.038a100.05 100.05 0 0 0-2.766.04l-.002-.001a100.05 100.05 0 0 0-.038 2.766c0-.947-.012-1.87-.037-2.766h-.003v-.002a100.02 100.02 0 0 0-2.769-.037c.949 0 1.872-.013 2.77-.038zm.08.077c62.327 1.773 1.773 62.328 0 0zm-.08 0c-1.785 62.33-62.332 1.771 0 0zm0-.08c-62.333-1.784-1.784-62.334 0 0zm.08 0c1.771-62.333 62.328-1.785 0 0zm-.08 80.165v-.002h.003c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037a99.995 99.995 0 0 0-2.766.04h-.002a100.03 100.03 0 0 0-.038 2.766c0-.947-.012-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.038-2.769-.038.949 0 1.872-.012 2.77-.037zm.08.077c62.328 1.78 1.77 62.334 0 0zm-.08 0c-1.783 62.335-62.333 1.778 0 0zm0-.08c-62.333-1.777-1.783-62.334 0 0zm.08 0c1.77-62.333 62.328-1.779 0 0zM589.882 429.56a5.451 5.451 0 0 1 .002-.003c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.003c.897.024 1.819.037 2.766.037a100.054 100.054 0 0 0-2.766.04h-.002a100.01 100.01 0 0 0-.037 2.766c0-.948-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.013 2.77-.037zm.08.077c62.328 1.782 1.774 62.33 0 0zm-.08 0c-1.781 62.33-62.334 1.78 0 0zm0-.08c-62.334-1.774-1.78-62.331 0 0zm.08 0c1.773-62.33 62.328-1.776 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.821.038-2.77 0 .949.012 1.872.037 2.77h.002v.002c.897.025 1.819.037 2.766.037a100.047 100.047 0 0 0-2.766.04h-.002a100.05 100.05 0 0 0-.037 2.766c0-.948-.013-1.87-.038-2.766h-.002v-.002a99.997 99.997 0 0 0-2.77-.038c.95 0 1.872-.012 2.77-.037zm.08.077c62.326 1.783 1.776 62.328 0 0zm-.08 0c-1.783 62.329-62.333 1.78 0 0zm0-.08c-62.334-1.774-1.78-62.334 0 0zm.08 0c1.773-62.333 62.328-1.776 0 0zm-.084 80.165v-.003h.002c.025-.896.038-1.818.038-2.766a100.026 100.026 0 0 0 .04 2.766v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.896-.038 1.818-.038 2.766a100.062 100.062 0 0 0-.04-2.766v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.334 1.777 1.774 62.334 0 0zm-.08 0c-1.78 62.338-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.78-62.338 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.078 80.164v-.002h.002v-.025c.024-.89.036-1.804.036-2.745 0 .95.013 1.872.037 2.77h.006v.002c.896.025 1.816.038 2.763.038-.947 0-1.869.012-2.765.037v.002h-.001v.022c-.024.89-.036 1.804-.036 2.744 0-.947-.013-1.87-.038-2.766h-.006v-.002c-.896-.025-1.818-.037-2.766-.037.949 0 1.871-.013 2.768-.038zm.001-.027v.025c-62.326-1.783-1.796-62.32 0-.025zm.078.104c62.324 1.771 1.79 62.315 0 .022v-.022zm-.08 0c-1.783 62.33-62.334 1.771 0 0zm.082-.08c1.775-62.333 62.329-1.786 0 0zm-.083 80.165v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.013 1.87.037 2.766h.003v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.334 1.778 1.774 62.335 0 0zm-.08 0c-1.78 62.335-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.78-62.334 0 0zm.08 0c1.777-62.334 62.334-1.777 0 0zm-80.24-320.647v-.003h.002c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.013 2.766-.037zm.079.077c62.33 1.78 1.778 62.33 0 0zm-.08 0c-1.777 62.33-62.33 1.78 0 0zm0-.08c-62.33-1.774-1.777-62.331 0 0zm.08 0c1.777-62.331 62.33-1.774 0 0zm-.08 80.168v-.002h.003c.025-.898.037-1.821.037-2.77 0 .949.013 1.872.038 2.77h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.003v-.002a99.997 99.997 0 0 0-2.765-.038c.947 0 1.87-.012 2.766-.037zm.08.077c62.33 1.78 1.78 62.329 0 0zm-.08 0c-1.78 62.329-62.329 1.78 0 0zm0-.08c-62.33-1.774-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.774 0 0zm-.08 80.165v-.003h.003c.025-.894.037-1.814.037-2.76a99.996 99.996 0 0 0 .04 2.76v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.013 2.766-.037zm.08.077c62.33 1.777 1.774 62.334 0 0zm-.08 0c-1.777 62.334-62.33 1.777 0 0zm0-.08c-62.33-1.777-1.777-62.338 0 0zm.08 0c1.777-62.338 62.33-1.777 0 0zm-.08 80.164v-.002h.003c.025-.898.037-1.82.037-2.77 0 .95.013 1.872.038 2.77h.002v.002c.896.025 1.818.038 2.766.038a100.028 100.028 0 0 0-2.766.039h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.037-2.765-.037.947 0 1.87-.013 2.766-.038zm.08.077c62.33 1.771 1.78 62.33 0 0zm-.08 0c-1.779 62.33-62.329 1.771 0 0zm0-.08c-62.33-1.783-1.777-62.334 0 0zm.08 0c1.778-62.334 62.33-1.783 0 0zm-.08 80.165v-.002h.003c.024-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.765-.038.947 0 1.87-.012 2.766-.037zm.08.077c62.33 1.778 1.774 62.335 0 0zm-.08 0c-1.78 62.335-62.33 1.778 0 0zm0-.08c-62.33-1.777-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.777 0 0zM429.553 429.56v-.003h.003c.024-.896.037-1.818.037-2.766 0 .948.013 1.87.037 2.766h.003v.003c.897.024 1.82.037 2.77.037-.95 0-1.873.013-2.77.038v.002h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.334 1.78 1.777 62.331 0 0zm-.08 0c-1.777 62.33-62.328 1.783 0 0zm0-.08c-62.328-1.776-1.777-62.33 0 0zm.08 0c1.777-62.331 62.334-1.774 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.821.038-2.77 0 .949.013 1.872.038 2.77h.002v.002c.897.025 1.82.037 2.77.037-.95 0-1.873.013-2.77.038v.002h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.332 1.78 1.78 62.329 0 0zm-.08 0c-1.78 62.328-62.327 1.783 0 0zm0-.08c-62.328-1.776-1.777-62.333 0 0zm.08 0c1.777-62.334 62.334-1.774 0 0zm-.08 80.165v-.003h.003c.024-.894.037-1.814.037-2.76a100.024 100.024 0 0 0 .04 2.76v.002c.897.025 1.82.038 2.77.038-.95 0-1.873.013-2.77.038v.002h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.334 1.777 1.774 62.334 0 0zm-.08 0c-1.777 62.333-62.328 1.78 0 0zm0-.08c-62.328-1.78-1.777-62.337 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.08 80.164v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.013 1.872.038 2.77h.002v.002c.897.025 1.82.038 2.77.038-.95 0-1.873.012-2.77.037v.002h-.003c-.024.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.037-2.766h-.003v-.002a100.03 100.03 0 0 0-2.766-.037c.948 0 1.87-.013 2.766-.038zm.08.077c62.333 1.771 1.78 62.33 0 0zm-.08 0c-1.78 62.328-62.327 1.773 0 0zm0-.08c-62.328-1.786-1.777-62.333 0 0zm.08 0c1.777-62.334 62.334-1.783 0 0zm-.08 80.165v-.002h.003c.024-.895.037-1.815.037-2.76 0 .945.013 1.865.037 2.76h.003v.002c.897.025 1.82.037 2.77.037-.95 0-1.873.013-2.77.038v.002h-.003c-.024.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.334 1.778 1.774 62.335 0 0zm-.08 0c-1.777 62.334-62.328 1.78 0 0zm0-.08c-62.328-1.779-1.777-62.333 0 0zm.08 0c1.777-62.334 62.334-1.777 0 0zM349.389 429.56v-.003h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.003c.897.024 1.819.037 2.766.037-.947 0-1.87.013-2.766.038v.002h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.333 1.78 1.777 62.331 0 0zm-.08 0c-1.778 62.331-62.334 1.78 0 0zm0-.08c-62.334-1.774-1.778-62.331 0 0zm.08 0c1.777-62.331 62.333-1.774 0 0zm-.08 80.168v-.006h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.871.037 2.768h.002v.002l.024-.001h-.024c1.778-62.326 62.319-1.79.024 0 .887.024 1.8.037 2.737.036-.946 0-1.866.013-2.76.038v.006h-.003c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.871-.038-2.768h-.002v-.002l-.026.001h.026c-1.778 62.325-62.317 1.797-.026 0a100.09 100.09 0 0 0-2.74-.037c.948 0 1.87-.012 2.766-.037zm.08.077c62.332 1.78 1.78 62.329 0 0zm-.08-.083c-62.333-1.77-1.78-62.33 0 0zm0 80.168v-.003h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.003c.897.024 1.819.037 2.766.037a100.015 100.015 0 0 0-2.766.04h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.333 1.777 1.777 62.334 0 0zm-.08 0c-1.777 62.338-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.777-62.338 0 0zm.08 0c1.776-62.338 62.334-1.777 0 0zm-.08 80.164v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.012 1.872.037 2.77h.002v.002c.897.025 1.819.038 2.766.038a100.069 100.069 0 0 0-2.766.039h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002a100.03 100.03 0 0 0-2.766-.037c.948 0 1.87-.013 2.766-.038zm.08.077c62.332 1.771 1.779 62.33 0 0zm-.08 0c-1.78 62.33-62.333 1.771 0 0zm0-.08c-62.334-1.783-1.778-62.334 0 0zm.08 0c1.777-62.334 62.333-1.783 0 0zm-.08 80.165v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.766.037-.947 0-1.87.013-2.766.038v.002h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.778 1.777 62.335 0 0zm-.08 0c-1.778 62.335-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.778-62.334 0 0zm.08 0c1.777-62.334 62.333-1.777 0 0zM269.227 429.56v-.003h.002c.025-.896.038-1.818.038-2.766a100 100 0 0 0 .037 2.766h.002v.003c.897.024 1.819.037 2.767.037a100.064 100.064 0 0 0-2.767.04h-.002a100.02 100.02 0 0 0-.037 2.766c0-.948-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.013 2.77-.037zm.08.077c62.328 1.782 1.77 62.33 0 0zm-.08 0c-1.784 62.33-62.334 1.78 0 0zm0-.08c-62.334-1.774-1.784-62.331 0 0zm.08 0c1.77-62.33 62.328-1.776 0 0zm-.08 80.168v-.002h.002c.025-.897.038-1.819.038-2.767 0 .948.012 1.87.037 2.767h.002v.002c.897.025 1.819.037 2.767.037a100.064 100.064 0 0 0-2.767.04h-.002a100.06 100.06 0 0 0-.037 2.766c0-.948-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.012 2.77-.037zm.08.077c62.328 1.783 1.77 62.333 0 0zm-.08 0c-1.784 62.331-62.334 1.78 0 0zm0-.08c-62.334-1.774-1.784-62.334 0 0zm.08 0c1.77-62.333 62.328-1.776 0 0zm-.08 80.165v-.003h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.003c.897.024 1.819.037 2.767.037a100.033 100.033 0 0 0-2.767.04h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.873-.013 2.77-.037zm.08.077c62.328 1.78 1.77 62.333 0 0zm-.08 0c-1.784 62.338-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.784-62.338 0 0zm.08 0c1.77-62.337 62.328-1.78 0 0zm-.08 80.164v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.012 1.872.037 2.77h.002v.002c.897.025 1.819.038 2.767.038a100.05 100.05 0 0 0-2.767.04h-.002c-.025.896-.037 1.818-.037 2.765 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.037-2.77-.037.95 0 1.872-.013 2.77-.038zm.08.077c62.327 1.773 1.772 62.328 0 0zm-.08 0c-1.786 62.33-62.333 1.771 0 0zm0-.08c-62.334-1.784-1.784-62.334 0 0zm.08 0c1.77-62.333 62.328-1.785 0 0zm-.08 80.165v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.767.037a99.994 99.994 0 0 0-2.767.04h-.002a100.03 100.03 0 0 0-.037 2.766c0-.947-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.012 2.77-.037zm.08.077c62.328 1.78 1.77 62.334 0 0zm-.08 0c-1.784 62.335-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.784-62.334 0 0zm.08 0c1.77-62.333 62.328-1.779 0 0zM189.06 429.56a5.451 5.451 0 0 1 .003-.003c.024-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.003c.896.024 1.818.037 2.766.037a100.054 100.054 0 0 0-2.766.04h-.002a100.01 100.01 0 0 0-.038 2.766c0-.948-.013-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.038-2.77-.038.95 0 1.873-.013 2.77-.037zm.08.077c62.328 1.782 1.774 62.33 0 0zm-.08 0c-1.78 62.33-62.334 1.78 0 0zm0-.08c-62.334-1.774-1.78-62.331 0 0zm.08 0c1.774-62.33 62.328-1.776 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.821.038-2.77 0 .949.013 1.872.038 2.77h.002v.002c.896.025 1.818.037 2.766.037a100.047 100.047 0 0 0-2.766.04h-.002a100.05 100.05 0 0 0-.038 2.766c0-.948-.013-1.87-.037-2.766h-.003v-.002a99.997 99.997 0 0 0-2.77-.038c.95 0 1.873-.012 2.77-.037zm.08.077c62.327 1.783 1.776 62.328 0 0zm-.08 0c-1.783 62.329-62.332 1.78 0 0zm0-.08c-62.334-1.774-1.78-62.334 0 0zm.08 0c1.774-62.333 62.328-1.776 0 0zm-.083 80.165v-.003h.002c.025-.896.038-1.818.038-2.766a100.026 100.026 0 0 0 .04 2.766v.003c.896.024 1.818.037 2.765.037-.947 0-1.87.013-2.766.038v.002h-.002c-.025.896-.037 1.818-.037 2.766a100.062 100.062 0 0 0-.04-2.766v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.333 1.777 1.774 62.334 0 0zm-.08 0c-1.78 62.338-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.78-62.338 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.078 80.164v-.002h.001v-.025l-.001.025c-62.326-1.783-1.796-62.32 0-.025.025-.89.038-1.804.038-2.745 0 .95.012 1.872.037 2.77h.006v.002c.895.025 1.816.038 2.762.038-.947 0-1.868.012-2.764.037v.002h-.002v.022c-.023.89-.036 1.804-.036 2.744 0-.947-.013-1.87-.037-2.766h-.006v-.002c-.897-.025-1.818-.037-2.766-.037.948 0 1.87-.013 2.768-.038zm.079.077c62.323 1.771 1.789 62.315-.001.022v-.022zm-.081 0c-1.783 62.33-62.333 1.771 0 0zm.083-.08c1.774-62.333 62.328-1.786 0 0zm-.083 80.165v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.766.037-.947 0-1.87.013-2.766.038v.002h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.778 1.774 62.335 0 0zm-.08 0c-1.78 62.335-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.78-62.334 0 0zm.08 0c1.777-62.334 62.333-1.777 0 0zm-80.24-320.647v-.003h.001c.025-.896.038-1.818.038-2.766 0 .948.013 1.87.037 2.766h.003v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.767.038v.002h-.002c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.079.077c62.33 1.78 1.777 62.33 0 0zm-.08 0c-1.777 62.33-62.33 1.78 0 0zm0-.08c-62.33-1.774-1.777-62.331 0 0zm.08 0c1.777-62.331 62.33-1.774 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.821.038-2.77 0 .949.013 1.872.037 2.77h.003v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002a99.997 99.997 0 0 0-2.766-.038c.948 0 1.87-.012 2.766-.037zm.08.077c62.329 1.78 1.78 62.329 0 0zm-.08 0c-1.78 62.329-62.33 1.78 0 0zm0-.08c-62.33-1.774-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.774 0 0zm-.08 80.165v-.003h.002c.025-.894.038-1.814.038-2.76a99.996 99.996 0 0 0 .04 2.76v.003c.896.024 1.818.037 2.766.037-.948 0-1.87.013-2.767.038v.002h-.002c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.33 1.777 1.774 62.334 0 0zm-.08 0c-1.777 62.334-62.33 1.777 0 0zm0-.08c-62.33-1.777-1.777-62.338 0 0zm.08 0c1.777-62.338 62.33-1.777 0 0zm-.08 80.164v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.013 1.872.037 2.77h.003v.002c.896.025 1.818.038 2.766.038a100.028 100.028 0 0 0-2.766.039h-.003c-.024.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.077c62.33 1.771 1.779 62.33 0 0zm-.08 0c-1.78 62.33-62.33 1.771 0 0zm0-.08c-62.33-1.783-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.783 0 0zm-.08 80.165v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.003v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.767.038v.002h-.002c-.024.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.33 1.778 1.774 62.335 0 0zm-.08 0c-1.78 62.335-62.33 1.778 0 0zm0-.08c-62.33-1.777-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.777 0 0zM28.732 429.56v-.003h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.003c.898.024 1.82.037 2.77.037-.95 0-1.872.013-2.77.038v.002h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.333 1.78 1.777 62.331 0 0zm-.08 0c-1.778 62.33-62.329 1.783 0 0zm0-.08c-62.329-1.776-1.778-62.33 0 0zm.08 0c1.777-62.331 62.333-1.774 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.821.038-2.77 0 .949.012 1.872.037 2.77h.002v.002c.898.025 1.82.037 2.77.037-.95 0-1.872.013-2.77.038v.002h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.332 1.78 1.78 62.329 0 0zm-.08 0c-1.78 62.328-62.327 1.783 0 0zm0-.08c-62.329-1.776-1.777-62.333 0 0zm.08 0c1.777-62.334 62.333-1.774 0 0zm-.08 80.165v-.003h.002c.025-.894.038-1.814.038-2.76a100.024 100.024 0 0 0 .04 2.76v.002c.897.025 1.82.038 2.769.038-.95 0-1.872.013-2.77.038v.002h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.333 1.777 1.773 62.334 0 0zm-.08 0c-1.778 62.333-62.329 1.78 0 0zm0-.08c-62.329-1.78-1.777-62.337 0 0zm.08 0c1.776-62.338 62.333-1.777 0 0zm-.08 80.164v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.012 1.872.037 2.77h.002v.002c.898.025 1.82.038 2.77.038-.95 0-1.872.012-2.77.037v.002h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002a100.03 100.03 0 0 0-2.766-.037c.948 0 1.87-.013 2.766-.038zm.08.077c62.332 1.771 1.779 62.33 0 0zm-.08 0c-1.78 62.328-62.328 1.773 0 0zm0-.08c-62.329-1.786-1.778-62.333 0 0zm.08 0c1.777-62.334 62.333-1.783 0 0zm-.08 80.165v-.002h.002c.025-.895.038-1.815.038-2.76 0 .945.012 1.865.037 2.76h.002v.002c.898.025 1.82.037 2.77.037-.95 0-1.872.013-2.77.038v.002h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.778 1.773 62.335 0 0zm-.08 0c-1.778 62.334-62.329 1.78 0 0zm0-.08c-62.329-1.779-1.778-62.333 0 0zm.08 0c1.777-62.334 62.333-1.777 0 0zM750.21 28.734v-.002h.002c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.767-.038.948 0 1.87-.012 2.767-.037zm.079.077c62.334 1.781 1.778 62.332 0 0zm-.08 0c-1.777 62.332-62.333 1.781 0 0zm0-.08c-62.334-1.773-1.777-62.33 0 0zm.08 0c1.777-62.33 62.334-1.773 0 0zm-.08 80.168v-.005h.003c.025-.897.037-1.819.037-2.767 0 .95.013 1.872.038 2.769h.002v.001h.018l-.018-.001c1.778-62.327 62.322-1.785.018 0 .889.025 1.803.037 2.742.037-.946 0-1.865.013-2.76.038v.005h-.002c-.025.897-.038 1.819-.038 2.766 0-.948-.012-1.87-.037-2.768h-.023.02c-1.778 62.326-62.32 1.793-.02 0-.89-.025-1.805-.037-2.745-.037.947 0 1.87-.013 2.766-.038zm.08.077c62.333 1.781 1.78 62.33 0 0zm-.08-.082c-62.332-1.771-1.779-62.33 0 0zm0 80.167v-.002h.003c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037a100.015 100.015 0 0 0-2.766.04h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.012 2.766-.037zm.08.077c62.334 1.778 1.777 62.335 0 0zm-.08 0c-1.777 62.338-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.777-62.338 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.08 80.165v-.003h.003c.025-.897.037-1.82.037-2.77 0 .95.013 1.873.038 2.77h.002v.003c.896.024 1.818.037 2.766.037a100.068 100.068 0 0 0-2.766.04h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.765-.038.947 0 1.87-.013 2.766-.037zm.08.077c62.333 1.77 1.78 62.329 0 0zm-.08 0c-1.78 62.329-62.332 1.77 0 0zm0-.08c-62.333-1.784-1.777-62.334 0 0zm.08 0c1.778-62.334 62.334-1.784 0 0zm-.08 80.164v-.002h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.013-2.766.037v.003h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.003c-.897-.024-1.819-.037-2.766-.037.947 0 1.87-.013 2.766-.038zm.08.078c62.334 1.777 1.777 62.335 0 0zm-.08 0c-1.777 62.335-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.777-62.334 0 0zm.08 0c1.777-62.334 62.334-1.777 0 0zM670.05 28.733v-.002h.002c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.003v-.002a100.07 100.07 0 0 0-2.769-.038c.949 0 1.872-.012 2.77-.037zm.079.077c62.328 1.783 1.771 62.33 0 0zm-.08 0c-1.784 62.332-62.333 1.781 0 0zm0-.08c-62.333-1.773-1.783-62.33 0 0zm.08 0c1.77-62.33 62.328-1.775 0 0zm-.08 80.168v-.002h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.012-2.766.037v.003h-.002a100.02 100.02 0 0 0-.038 2.765c0-.947-.012-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.037-2.769-.037.949 0 1.872-.013 2.77-.038zm.08.078c62.328 1.782 1.771 62.333 0 0zm-.08 0c-1.784 62.33-62.333 1.78 0 0zm0-.08c-62.333-1.774-1.783-62.335 0 0zm.08 0c1.77-62.334 62.329-1.776 0 0zm-.08 80.164v-.002h.003c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037a100.034 100.034 0 0 0-2.766.04h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.038-2.769-.038.949 0 1.872-.012 2.77-.037zm.08.077c62.328 1.78 1.77 62.334 0 0zm-.08 0c-1.783 62.338-62.333 1.778 0 0zm0-.08c-62.333-1.777-1.783-62.337 0 0zm.08 0c1.77-62.336 62.329-1.779 0 0zm-.08 80.165v-.003h.003c.025-.897.037-1.82.037-2.77 0 .95.013 1.873.038 2.77h.002v.003c.896.024 1.818.037 2.766.037a100.049 100.049 0 0 0-2.766.04h-.002a100.05 100.05 0 0 0-.038 2.766 100.055 100.055 0 0 0-.04-2.766v-.002c-.897-.025-1.82-.038-2.769-.038.949 0 1.872-.013 2.77-.037zm.08.077c62.327 1.773 1.773 62.328 0 0zm-.08 0c-1.786 62.329-62.332 1.77 0 0zm0-.08c-62.333-1.784-1.784-62.334 0 0zm.08 0c1.771-62.333 62.328-1.786 0 0zm-.08 80.164v-.002h.003c.025-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.002c.896.025 1.818.038 2.766.038a99.996 99.996 0 0 0-2.766.04h-.002a100.03 100.03 0 0 0-.038 2.766c0-.948-.012-1.87-.037-2.766h-.003v-.003c-.897-.024-1.82-.037-2.769-.037.949 0 1.872-.013 2.77-.038zm.08.078c62.329 1.78 1.77 62.334 0 0zm-.08 0c-1.783 62.335-62.333 1.777 0 0zm0-.08c-62.333-1.777-1.783-62.334 0 0zm.08 0c1.77-62.333 62.328-1.78 0 0zM589.882 28.733v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.766.037a100.014 100.014 0 0 0-2.766.04h-.002c-.025.897-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.012 2.77-.037zm.08.077c62.328 1.783 1.774 62.33 0 0zm-.08 0c-1.781 62.332-62.334 1.781 0 0zm0-.08c-62.334-1.773-1.78-62.33 0 0zm.08 0c1.773-62.33 62.328-1.775 0 0zm-.08 80.168v-.002h.002c.025-.897.038-1.82.038-2.77 0 .95.012 1.872.037 2.77h.002v.002c.897.025 1.819.038 2.766.038a100.008 100.008 0 0 0-2.766.04h-.002c-.025.896-.037 1.818-.037 2.765 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.037-2.77-.037.95 0 1.872-.013 2.77-.038zm.08.078c62.326 1.783 1.776 62.328 0 0zm-.08 0c-1.783 62.329-62.333 1.78 0 0zm0-.08c-62.334-1.774-1.78-62.335 0 0zm.08 0c1.773-62.334 62.328-1.776 0 0zm-.084 80.164v-.002h.002c.025-.897.038-1.819.038-2.766a100.026 100.026 0 0 0 .04 2.766v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.818-.038 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.334 1.778 1.774 62.335 0 0zm-.08 0c-1.78 62.338-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.78-62.337 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.078 80.165v-.003h.002v-.024c.024-.89.036-1.805.036-2.745 0 .949.013 1.872.038 2.77h.005v.002c.896.025 1.816.037 2.763.037-.947 0-1.869.013-2.765.038v.002h-.001v.022c-.024.89-.036 1.804-.036 2.744 0-.948-.013-1.87-.038-2.766h-.006v-.002c-.896-.025-1.818-.038-2.766-.038.949 0 1.871-.012 2.768-.037zm0-.003c-62.325-1.782-1.795-62.319.001-.024v.024zm.079.08c62.324 1.771 1.79 62.314 0 .022v-.022zm-.08 0c-1.784 62.329-62.333 1.77 0 0zm.082-.08c1.775-62.333 62.329-1.786 0 0zm-.083 80.164v-.002h.002c.025-.896.038-1.818.038-2.766 0 .948.013 1.87.037 2.766h.003v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.013-2.766.037v.003h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.003c-.896-.024-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.078c62.334 1.777 1.774 62.335 0 0zm-.08 0c-1.78 62.335-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.78-62.334 0 0zm.08 0c1.777-62.334 62.334-1.777 0 0zm-80.24-320.648v-.002h.002c.025-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.012 2.766-.037zm.079.077c62.33 1.781 1.778 62.332 0 0zm-.08 0c-1.777 62.332-62.33 1.781 0 0zm0-.08c-62.33-1.773-1.777-62.33 0 0zm.08 0c1.777-62.33 62.33-1.773 0 0zm-.08 80.168v-.002h.003c.025-.897.037-1.82.037-2.77 0 .95.013 1.873.038 2.77h.002v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.012-2.766.037v.002h-.002c-.025.897-.038 1.819-.038 2.766 0-.947-.012-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.037-2.765-.037.947 0 1.87-.013 2.766-.038zm.08.077c62.33 1.781 1.78 62.33 0 0zm-.08 0c-1.78 62.33-62.329 1.781 0 0zm0-.079c-62.33-1.774-1.777-62.335 0 0zm.08 0c1.777-62.335 62.33-1.774 0 0zm-.08 80.164v-.002h.003c.025-.895.037-1.815.037-2.76a100.036 100.036 0 0 0 .04 2.76v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.766.038v.002h-.002c-.025.897-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.002v-.002c-.897-.025-1.819-.038-2.766-.038.947 0 1.87-.012 2.766-.037zm.08.077c62.33 1.778 1.774 62.335 0 0zm-.08 0c-1.777 62.335-62.33 1.778 0 0zm0-.08c-62.33-1.777-1.777-62.337 0 0zm.08 0c1.777-62.337 62.33-1.777 0 0zm-.08 80.165v-.003h.003c.025-.897.037-1.82.037-2.77 0 .95.013 1.873.038 2.77h.002v.003c.896.024 1.818.037 2.766.037a100.028 100.028 0 0 0-2.766.04h-.002c-.025.896-.038 1.818-.038 2.766 0-.948-.012-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.765-.038.947 0 1.87-.013 2.766-.037zm.08.077c62.33 1.77 1.78 62.329 0 0zm-.08 0c-1.779 62.329-62.329 1.77 0 0zm0-.08c-62.33-1.784-1.777-62.334 0 0zm.08 0c1.778-62.334 62.33-1.784 0 0zm-.08 80.164v-.002h.003c.024-.896.037-1.818.037-2.766 0 .948.013 1.87.038 2.766h.002v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.013-2.766.037v.003h-.002c-.025.896-.038 1.818-.038 2.766a100.056 100.056 0 0 0-.04-2.766v-.003c-.896-.024-1.818-.037-2.765-.037.947 0 1.87-.013 2.766-.038zm.08.078c62.33 1.777 1.774 62.335 0 0zm-.08 0c-1.78 62.335-62.33 1.777 0 0zm0-.08c-62.33-1.777-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.777 0 0zM429.553 28.733v-.002h.003c.024-.897.037-1.819.037-2.766 0 .947.013 1.87.037 2.766h.003v.002c.897.025 1.82.037 2.77.037-.95 0-1.873.013-2.77.038v.002h-.003c-.024.897-.037 1.818-.037 2.766a100.037 100.037 0 0 0-.04-2.768c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.334 1.781 1.777 62.332 0 0zm-.08 0c-1.777 62.33-62.328 1.783 0 0zm0-.08c-62.328-1.775-1.777-62.33 0 0zm.08 0c1.777-62.33 62.334-1.773 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.013 1.872.038 2.77h.002v.002c.897.025 1.82.038 2.77.038a100 100 0 0 0-2.77.037v.002h-.003c-.024.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.077c62.333 1.781 1.78 62.33 0 0zm-.08 0c-1.78 62.329-62.327 1.784 0 0zm0-.079c-62.328-1.776-1.777-62.334 0 0zm.08 0c1.777-62.335 62.334-1.774 0 0zm-.08 80.164v-.002h.003c.024-.895.037-1.815.037-2.76 0 .945.013 1.865.037 2.76h.003v.002c.897.025 1.82.037 2.77.037-.95 0-1.873.013-2.77.038v.002h-.003c-.024.897-.037 1.818-.037 2.766 0-.947-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.334 1.778 1.774 62.335 0 0zm-.08 0c-1.777 62.334-62.328 1.78 0 0zm0-.08c-62.328-1.779-1.777-62.336 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.002 80.162h.002v.003c.897.024 1.82.037 2.77.037-.95 0-1.873.013-2.77.038v.002h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.037-2.766h-.003v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037v-.003h.002c.025-.897.038-1.82.038-2.77 0 .95.013 1.873.038 2.77zm.002.08c62.333 1.77 1.78 62.329 0 0zm-.08 0c-1.78 62.328-62.327 1.773 0 0zm0-.08c-62.328-1.786-1.777-62.333 0 0zm.08 0c1.777-62.334 62.334-1.784 0 0zm-.08 80.164v-.002h.003c.024-.894.037-1.814.037-2.76 0 .946.013 1.866.037 2.76h.003v.002c.897.025 1.82.038 2.77.038-.95 0-1.873.013-2.77.037v.003h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.037-2.766h-.003v-.003c-.896-.024-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.078c62.334 1.777 1.774 62.335 0 0zm-.08 0c-1.777 62.334-62.328 1.78 0 0zm0-.08c-62.328-1.78-1.777-62.333 0 0zm.08 0c1.777-62.334 62.334-1.777 0 0zM349.389 28.733v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.766.037-.947 0-1.87.013-2.766.038v.002h-.002c-.025.897-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.781 1.777 62.332 0 0zm-.08 0c-1.778 62.332-62.334 1.781 0 0zm0-.08c-62.334-1.773-1.778-62.33 0 0zm.08 0c1.777-62.33 62.333-1.773 0 0zm-.08 80.168v-.005h.002c.025-.897.038-1.819.038-2.767 0 .95.012 1.872.037 2.769h.002v.001h.018c.89.024 1.803.036 2.743.036-.946 0-1.866.013-2.76.038v.005h-.003c-.025.897-.037 1.819-.037 2.766 0-.948-.013-1.87-.038-2.768h-.022.02c-1.778 62.326-62.32 1.793-.02 0-.89-.025-1.806-.037-2.746-.037.948 0 1.87-.013 2.766-.038zm-.02.075zm.1-.078c1.777-62.327 62.321-1.785.017 0h-.018zm0 .08c62.332 1.781 1.78 62.33 0 0zm-.08-.082c-62.333-1.771-1.78-62.33 0 0zm0 80.167v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.766.037a100.015 100.015 0 0 0-2.766.04h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.778 1.777 62.335 0 0zm-.08 0c-1.777 62.338-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.777-62.338 0 0zm.08 0c1.777-62.338 62.333-1.777 0 0zm-.08 80.165v-.003h.002c.025-.897.038-1.82.038-2.77 0 .95.012 1.873.037 2.77h.002v.003c.897.024 1.819.037 2.766.037a100.068 100.068 0 0 0-2.766.04h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.332 1.77 1.779 62.329 0 0zm-.08 0c-1.78 62.329-62.333 1.77 0 0zm0-.08c-62.334-1.784-1.778-62.334 0 0zm.08 0c1.777-62.334 62.333-1.784 0 0zm-.08 80.164v-.002h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.002c.897.025 1.819.038 2.766.038-.947 0-1.87.013-2.766.037v.003h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.003c-.897-.024-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.078c62.334 1.777 1.777 62.335 0 0zm-.08 0c-1.777 62.335-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.778-62.334 0 0zm.08 0c1.777-62.334 62.333-1.777 0 0zM269.227 28.733v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.767.037a100.063 100.063 0 0 0-2.767.04h-.002a100.02 100.02 0 0 0-.037 2.766c0-.948-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.012 2.77-.037zm.08.077c62.328 1.783 1.77 62.33 0 0zm-.08 0c-1.784 62.332-62.334 1.781 0 0zm0-.08c-62.334-1.773-1.784-62.33 0 0zm.08 0c1.77-62.33 62.328-1.775 0 0zm-.08 80.168v-.002h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.002c.897.025 1.819.038 2.767.038-.948 0-1.87.012-2.767.037v.003h-.002c-.025.896-.037 1.818-.037 2.765 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.037-2.77-.037.95 0 1.872-.013 2.77-.038zm.08.078c62.328 1.782 1.77 62.333 0 0zm-.08 0c-1.784 62.33-62.334 1.78 0 0zm0-.08c-62.334-1.774-1.784-62.335 0 0zm.08 0c1.77-62.334 62.328-1.776 0 0zm-.08 80.164v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.897.025 1.819.037 2.767.037a100.034 100.034 0 0 0-2.767.04h-.002a100.07 100.07 0 0 0-.037 2.766c0-.947-.013-1.87-.038-2.766h-.002v-.002c-.898-.025-1.82-.038-2.77-.038.95 0 1.872-.012 2.77-.037zm.08.077c62.328 1.78 1.77 62.334 0 0zm-.08 0c-1.784 62.338-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.784-62.337 0 0zm.08 0c1.77-62.336 62.328-1.779 0 0zm-.08 80.165v-.003h.002c.025-.897.038-1.82.038-2.77 0 .95.012 1.873.037 2.77h.002v.003c.897.024 1.819.037 2.767.037a100.049 100.049 0 0 0-2.767.04h-.002c-.025.896-.037 1.818-.037 2.766a100.055 100.055 0 0 0-.04-2.766v-.002a100.01 100.01 0 0 0-2.77-.038c.95 0 1.872-.013 2.77-.037zm.08.077c62.327 1.773 1.773 62.328 0 0zm-.08 0c-1.786 62.329-62.333 1.77 0 0zm0-.08c-62.334-1.784-1.784-62.334 0 0zm.08 0c1.77-62.333 62.328-1.786 0 0zm-.08 80.164v-.002h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.002c.897.025 1.819.038 2.767.038a99.995 99.995 0 0 0-2.767.04h-.002a100.03 100.03 0 0 0-.037 2.766c0-.948-.013-1.87-.038-2.766h-.002v-.003c-.898-.024-1.82-.037-2.77-.037.95 0 1.872-.013 2.77-.038zm.08.078c62.328 1.78 1.77 62.334 0 0zm-.08 0c-1.784 62.335-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.784-62.334 0 0zm.08 0c1.77-62.333 62.328-1.78 0 0zM189.06 28.733v-.002h.003c.024-.897.037-1.819.037-2.766 0 .947.013 1.87.038 2.766h.002v.002c.896.025 1.818.037 2.766.037a100.014 100.014 0 0 0-2.766.04h-.002c-.025.897-.038 1.818-.038 2.766 0-.948-.013-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.038-2.77-.038.95 0 1.873-.012 2.77-.037zm.08.077c62.328 1.783 1.774 62.33 0 0zm-.08 0c-1.78 62.332-62.334 1.781 0 0zm0-.08c-62.334-1.773-1.78-62.33 0 0zm.08 0c1.774-62.33 62.328-1.775 0 0zm-.08 80.168v-.002h.002c.025-.897.038-1.82.038-2.77 0 .95.013 1.872.038 2.77h.002v.002c.896.025 1.818.038 2.766.038a100.008 100.008 0 0 0-2.766.04h-.002c-.025.896-.038 1.818-.038 2.765 0-.947-.013-1.87-.037-2.766h-.003v-.002c-.897-.025-1.82-.037-2.77-.037.95 0 1.873-.013 2.77-.038zm.08.078c62.327 1.783 1.776 62.328 0 0zm-.08 0c-1.783 62.329-62.332 1.78 0 0zm0-.08c-62.334-1.774-1.78-62.335 0 0zm.08 0c1.774-62.334 62.328-1.776 0 0zm-.083 80.164v-.002h.002c.025-.897.038-1.819.038-2.766a100.026 100.026 0 0 0 .04 2.766v.002c.896.025 1.818.037 2.765.037-.947 0-1.87.013-2.766.038v.002h-.002c-.025.897-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.778 1.774 62.335 0 0zm-.08 0c-1.78 62.338-62.334 1.778 0 0zm0-.08c-62.334-1.777-1.78-62.337 0 0zm.08 0c1.777-62.338 62.334-1.777 0 0zm-.078 80.165v-.003h.001v-.024l-.001.024c-62.326-1.782-1.796-62.319 0-.024.025-.89.038-1.805.038-2.745 0 .949.012 1.872.037 2.77h.006v.002c.895.025 1.816.037 2.762.037-.947 0-1.868.013-2.764.038v.002h-.002v.022c-.023.89-.036 1.804-.036 2.744 0-.948-.013-1.87-.037-2.766h-.006v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.768-.037zm.079.077c62.323 1.771 1.789 62.314-.001.022v-.022zm-.081 0c-1.783 62.329-62.333 1.77 0 0zm.083-.08c1.774-62.333 62.328-1.786 0 0zm-.083 80.164v-.002h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.002v.002c.897.025 1.819.038 2.766.038-.947 0-1.87.013-2.766.037v.003h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.003c-.897-.024-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.078c62.334 1.777 1.773 62.335 0 0zm-.08 0c-1.78 62.335-62.334 1.777 0 0zm0-.08c-62.334-1.777-1.78-62.334 0 0zm.08 0c1.777-62.334 62.333-1.777 0 0zm-80.24-320.648v-.002h.001c.025-.897.038-1.819.038-2.766 0 .947.013 1.87.037 2.766h.003v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.767.038v.002h-.002c-.024.897-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.079.077c62.33 1.781 1.777 62.332 0 0zm-.08 0c-1.777 62.332-62.33 1.781 0 0zm0-.08c-62.33-1.773-1.777-62.33 0 0zm.08 0c1.777-62.33 62.33-1.773 0 0zm-.08 80.168v-.002h.002c.025-.897.038-1.82.038-2.77 0 .95.013 1.873.037 2.77h.003v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.012-2.766.037v.002h-.003c-.024.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.077c62.329 1.781 1.78 62.33 0 0zm-.08 0c-1.78 62.33-62.33 1.781 0 0zm0-.079c-62.33-1.774-1.777-62.335 0 0zm.08 0c1.777-62.335 62.33-1.774 0 0zm-.08 80.164v-.002h.002c.025-.895.038-1.815.038-2.76a100.036 100.036 0 0 0 .04 2.76v.002c.896.025 1.818.037 2.766.037-.948 0-1.87.013-2.767.038v.002h-.002c-.025.897-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.33 1.778 1.774 62.335 0 0zm-.08 0c-1.777 62.335-62.33 1.778 0 0zm0-.08c-62.33-1.777-1.777-62.337 0 0zm.08 0c1.777-62.337 62.33-1.777 0 0zm-.08 80.165v-.003h.002c.025-.897.038-1.82.038-2.77 0 .95.013 1.873.037 2.77h.003v.003c.896.024 1.818.037 2.766.037a100.028 100.028 0 0 0-2.766.04h-.003c-.024.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.896-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.329 1.77 1.78 62.329 0 0zm-.08 0c-1.78 62.329-62.33 1.77 0 0zm0-.08c-62.33-1.784-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.784 0 0zm-.08 80.164v-.002h.002c.025-.896.038-1.818.038-2.766 0 .948.012 1.87.037 2.766h.003v.002c.896.025 1.818.038 2.766.038-.948 0-1.87.013-2.767.037v.003h-.002c-.024.896-.037 1.818-.037 2.766a100.056 100.056 0 0 0-.04-2.766v-.003c-.896-.024-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.078c62.33 1.777 1.773 62.335 0 0zm-.08 0c-1.78 62.335-62.33 1.777 0 0zm0-.08c-62.33-1.777-1.777-62.334 0 0zm.08 0c1.777-62.334 62.33-1.777 0 0zM28.732 28.733v-.002h.002c.025-.897.038-1.819.038-2.766 0 .947.012 1.87.037 2.766h.002v.002c.898.025 1.82.037 2.77.037-.95 0-1.872.013-2.77.038v.002h-.002c-.025.897-.037 1.818-.037 2.766a100.037 100.037 0 0 0-.04-2.768c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.781 1.777 62.332 0 0zm-.08 0c-1.778 62.33-62.329 1.783 0 0zm0-.08c-62.329-1.775-1.778-62.33 0 0zm.08 0c1.777-62.33 62.333-1.773 0 0zm-.08 80.168v-.002h.002c.025-.898.038-1.82.038-2.77 0 .95.012 1.872.037 2.77h.002v.002c.898.025 1.82.038 2.77.038a100 100 0 0 0-2.77.037v.002h-.002c-.025.897-.037 1.819-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.08.077c62.332 1.781 1.779 62.33 0 0zm-.08 0c-1.78 62.329-62.327 1.784 0 0zm0-.079c-62.329-1.776-1.777-62.334 0 0zm.08 0c1.777-62.335 62.333-1.774 0 0zm-.08 80.164v-.002h.002c.025-.895.038-1.815.038-2.76 0 .945.012 1.865.037 2.76h.002v.002c.898.025 1.82.037 2.77.037-.95 0-1.872.013-2.77.038v.002h-.002c-.025.897-.037 1.818-.037 2.766 0-.947-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.012 2.766-.037zm.08.077c62.333 1.778 1.773 62.335 0 0zm-.08 0c-1.778 62.334-62.329 1.78 0 0zm0-.08c-62.329-1.779-1.777-62.336 0 0zm.08 0c1.777-62.338 62.333-1.777 0 0zm-.08 80.165v-.003h.002c.025-.897.038-1.82.038-2.77 0 .95.012 1.873.037 2.77h.002v.002c.898.025 1.82.038 2.77.038-.95 0-1.872.013-2.77.038v.002h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.002c-.897-.025-1.818-.038-2.766-.038.948 0 1.87-.013 2.766-.037zm.08.077c62.332 1.77 1.779 62.329 0 0zm-.08 0c-1.78 62.328-62.327 1.773 0 0zm0-.08c-62.329-1.786-1.778-62.333 0 0zm.08 0c1.777-62.334 62.333-1.784 0 0zm-.08 80.164v-.002h.002c.025-.894.038-1.814.038-2.76 0 .946.012 1.866.037 2.76h.002v.002c.898.025 1.82.038 2.77.038-.95 0-1.872.013-2.77.037v.003h-.002c-.025.896-.037 1.818-.037 2.766 0-.948-.013-1.87-.038-2.766h-.002v-.003c-.897-.024-1.818-.037-2.766-.037.948 0 1.87-.013 2.766-.038zm.04-2.768v0zm.04 2.846c62.333 1.777 1.773 62.335 0 0zm-.08 0c-1.777 62.334-62.329 1.78 0 0zm0-.08c-62.329-1.78-1.778-62.333 0 0zm.08 0c1.777-62.334 62.333-1.777 0 0z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="ind-5" xmlns="http://www.w3.org/2000/svg"
+                        width="516" height="777" viewBox="0 0 516 777">
+                        <g>
+                            <g>
+                                <path
+                                    d="M.626 17.464L18.056-.024 79.55 61.645 62.12 79.133zm.007 174.452l17.432-17.486 61.486 61.677-17.432 17.486zM.63 366.358l17.429-17.487 61.495 61.668-17.43 17.488zM.63 540.806l17.428-17.488 61.495 61.668-17.429 17.488zm0 174.446l17.43-17.488 61.494 61.669-17.429 17.487zm.002-566.375L62.12 87.2l17.432 17.486-61.486 61.676zm0 174.449l61.485-61.678 17.432 17.486-61.486 61.677zm.044 174.463l61.495-61.677 17.425 17.482-61.495 61.677zm.007 174.459L62.18 610.57l17.425 17.483-61.495 61.676zM55.07 17.462L72.495-.028 134 61.632l-17.427 17.49zm.021 174.449l17.432-17.486 61.486 61.677-17.431 17.486zm-.013 174.44l17.426-17.49 61.504 61.66-17.427 17.49zm.003 174.445l17.427-17.49 61.503 61.659-17.426 17.49zm.004 174.444l17.426-17.49 61.504 61.66-17.427 17.49zm.001-566.362l61.487-61.677 17.43 17.485-61.485 61.678zm-.002 174.45l61.487-61.677L134 279.136l-61.486 61.677zm.007 174.43l61.48-61.67 17.426 17.479-61.48 61.67zm.004 174.446l61.48-61.67L134 628.011l-61.48 61.671zm54.425-654.742L126.945-.03l61.504 61.66-17.427 17.49zm.036 174.462l17.443-17.487 61.468 61.694-17.442 17.487zm-.03 174.426l17.427-17.49 61.504 61.66-17.426 17.49zm.004 174.445l17.427-17.49 61.503 61.659-17.426 17.49zm.005 174.444l17.426-17.49 61.504 61.66-17.427 17.49zm.037-566.367l61.502-61.683 17.43 17.488-61.5 61.683zm.008 174.458l61.501-61.683 17.432 17.488-61.502 61.683zm-.034 174.445l61.48-61.67 17.426 17.479-61.48 61.67zm0 174.45l61.48-61.67 17.425 17.478-61.48 61.671zm54.423-654.766L181.394-.03l61.504 61.66-17.426 17.49zm.04 174.466l17.442-17.486 61.469 61.694-17.443 17.487zm-.032 174.423l17.426-17.49 61.504 61.66-17.427 17.49zm.003 174.445l17.427-17.49 61.503 61.659-17.426 17.49zm.004 174.444l17.426-17.49 61.504 61.66-17.427 17.49zm.042-566.367l61.502-61.684 17.43 17.488-61.5 61.684zm.008 174.458l61.501-61.683 17.432 17.488-61.502 61.683zm-.043 174.452l61.48-61.67 17.425 17.478-61.48 61.671zm-.001 174.45l61.48-61.671 17.425 17.48-61.48 61.67zm54.428-654.773l17.426-17.49 61.504 61.66-17.426 17.49zm.036 174.475l17.443-17.487 61.469 61.694-17.443 17.487zm-.028 174.414l17.426-17.49 61.504 61.659-17.427 17.49zm.003 174.444l17.426-17.49 61.504 61.66-17.426 17.49zm.004 174.445l17.426-17.49 61.504 61.66-17.427 17.49zm.047-566.37l61.5-61.682 17.432 17.488-61.501 61.683zm.007 174.459l61.502-61.683 17.43 17.488-61.5 61.683zm-.045 174.455l61.48-61.671 17.425 17.48-61.48 61.67zm-.002 174.45l61.48-61.671 17.425 17.479-61.48 61.67zm54.427-654.775l17.426-17.49 61.504 61.66-17.426 17.49zm.04 174.478l17.442-17.487 61.469 61.694-17.442 17.487zm-.032 174.411l17.426-17.49 61.504 61.66-17.427 17.49zm.003 174.444l17.427-17.49 61.503 61.66-17.426 17.49zm.004 174.445l17.426-17.49 61.504 61.66-17.427 17.49zm.051-566.37l61.5-61.684 17.432 17.488-61.501 61.684zm.008 174.458l61.5-61.683 17.432 17.488-61.501 61.683zm-.049 174.458l61.48-61.67 17.425 17.479-61.48 61.67zm-.002 174.449l61.48-61.67 17.426 17.478-61.48 61.67zM327.315 17.45l17.426-17.49 61.504 61.66-17.426 17.49zm.042 174.481l17.443-17.486 61.469 61.694-17.443 17.487zm-.034 174.409l17.426-17.491 61.504 61.66L388.826 428zm.003 174.444l17.427-17.49 61.503 61.659-17.426 17.49zm.004 174.444l17.426-17.49 61.504 61.66-17.427 17.49zm.05-566.365L388.88 87.18l17.431 17.488-61.501 61.684zm.007 174.458l61.5-61.683 17.432 17.488-61.5 61.683zm-.052 174.461l61.48-61.67 17.425 17.478-61.48 61.671zm0 174.449l61.48-61.671 17.425 17.48-61.48 61.67zm54.423-654.778l17.426-17.49 61.504 61.66-17.427 17.49zm.052 174.478l17.442-17.486 61.47 61.694-17.443 17.487zm-.044 174.412l17.426-17.49 61.504 61.659-17.427 17.49zm.003 174.444l17.427-17.49 61.503 61.66-17.426 17.49zm.004 174.445l17.426-17.49 61.504 61.659-17.427 17.49zm.06-566.373l61.501-61.683 17.432 17.488-61.502 61.683zm.007 174.459l61.5-61.684 17.432 17.488-61.5 61.684zm-.055 174.462l61.48-61.67 17.426 17.479-61.48 61.67zm0 174.45l61.48-61.672 17.425 17.48-61.48 61.67zm54.422-654.78l17.426-17.49 61.504 61.66-17.426 17.49zm.048 174.487l17.443-17.486 61.469 61.694-17.443 17.487zm-.04 174.402l17.426-17.49 61.504 61.66L497.718 428zm.003 174.446l17.426-17.491 61.504 61.66-17.426 17.49zm.003 174.444l17.427-17.49 61.504 61.659-17.427 17.49zm.065-566.374l61.501-61.683 17.432 17.488-61.502 61.683zm.007 174.458l61.501-61.683 17.431 17.488-61.5 61.683zm-.057 174.466l61.48-61.67 17.425 17.478-61.48 61.671zm-.001 174.449l61.48-61.67 17.425 17.478-61.48 61.671z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                    <symbol id="ind-8" xmlns="http://www.w3.org/2000/svg"
+                        width="466" height="775" viewBox="0 0 466 775">
+                        <g>
+                            <g>
+                                <path
+                                    d="M32.478 16.003c0 8.825-7.157 15.98-15.986 15.98S.506 24.828.506 16.003 7.663.023 16.492.023s15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98S69.605.023 78.434.023 94.42 7.179 94.42 16.004zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98S131.547.023 140.376.023s15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98S193.489.023 202.318.023s15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98S255.43.023 264.26.023s15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98S317.373.023 326.202.023s15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98S379.316.023 388.144.023c8.83 0 15.986 7.155 15.986 15.98zm29.97 0c0-8.825 7.158-15.98 15.986-15.98 8.83 0 15.986 7.155 15.986 15.98s-7.157 15.98-15.986 15.98c-8.828 0-15.986-7.155-15.986-15.98zM32.478 77.919c0 8.825-7.157 15.98-15.986 15.98S.506 86.744.506 77.919s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98S94.42 69.095 94.42 77.92zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zM32.478 139.836c0 8.825-7.157 15.98-15.986 15.98S.506 148.66.506 139.836c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98 0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98 0-8.826 7.158-15.98 15.986-15.98 8.83 0 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98 0-8.826 7.158-15.98 15.986-15.98 8.83 0 15.986 7.154 15.986 15.98zM32.478 201.752c0 8.825-7.157 15.98-15.986 15.98S.506 210.577.506 201.752s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zM32.478 263.67c0 8.825-7.157 15.98-15.986 15.98S.506 272.493.506 263.668c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98 0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98c0-8.826 7.157-15.98 15.986-15.98s15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98 0-8.826 7.158-15.98 15.986-15.98 8.83 0 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98 0-8.826 7.158-15.98 15.986-15.98 8.83 0 15.986 7.154 15.986 15.98zM32.478 325.585c0 8.825-7.157 15.98-15.986 15.98S.506 334.41.506 325.585s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zM32.478 387.502c0 8.824-7.157 15.98-15.986 15.98S.506 396.325.506 387.501c0-8.825 7.157-15.98 15.986-15.98s15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98s-15.986-7.156-15.986-15.98c0-8.825 7.157-15.98 15.986-15.98s15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98s-15.986-7.156-15.986-15.98c0-8.825 7.157-15.98 15.986-15.98s15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98s-15.986-7.156-15.986-15.98c0-8.825 7.157-15.98 15.986-15.98s15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98-8.828 0-15.986-7.156-15.986-15.98 0-8.825 7.157-15.98 15.986-15.98s15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98s-15.986-7.156-15.986-15.98c0-8.825 7.157-15.98 15.986-15.98s15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98-8.828 0-15.986-7.156-15.986-15.98 0-8.825 7.158-15.98 15.986-15.98 8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.824-7.157 15.98-15.986 15.98-8.828 0-15.986-7.156-15.986-15.98 0-8.825 7.158-15.98 15.986-15.98 8.83 0 15.986 7.155 15.986 15.98zM32.478 449.418c0 8.825-7.157 15.98-15.986 15.98S.506 458.243.506 449.418s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zM32.478 511.334c0 8.825-7.157 15.98-15.986 15.98S.506 520.16.506 511.335s7.157-15.979 15.986-15.979 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.979 15.986-15.979 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.979 15.986-15.979 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.979 15.986-15.979 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.979 15.986-15.979 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.979 15.986-15.979 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.979 15.986-15.979c8.83 0 15.986 7.154 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.979 15.986-15.979c8.83 0 15.986 7.154 15.986 15.98zM32.478 573.251c0 8.825-7.157 15.98-15.986 15.98S.506 582.076.506 573.25s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zM32.478 635.167c0 8.826-7.157 15.98-15.986 15.98S.506 643.993.506 635.167c0-8.825 7.157-15.979 15.986-15.979s15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98s-15.986-7.154-15.986-15.98c0-8.825 7.157-15.979 15.986-15.979s15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98s-15.986-7.154-15.986-15.98c0-8.825 7.157-15.979 15.986-15.979s15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98s-15.986-7.154-15.986-15.98c0-8.825 7.157-15.979 15.986-15.979s15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98-8.828 0-15.986-7.154-15.986-15.98 0-8.825 7.157-15.979 15.986-15.979s15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98s-15.986-7.154-15.986-15.98c0-8.825 7.157-15.979 15.986-15.979s15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98-8.828 0-15.986-7.154-15.986-15.98 0-8.825 7.158-15.979 15.986-15.979 8.83 0 15.986 7.154 15.986 15.98zm61.942 0c0 8.826-7.157 15.98-15.986 15.98-8.828 0-15.986-7.154-15.986-15.98 0-8.825 7.158-15.979 15.986-15.979 8.83 0 15.986 7.154 15.986 15.98zM32.478 697.084c0 8.825-7.157 15.98-15.986 15.98S.506 705.909.506 697.083s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98s-15.986-7.155-15.986-15.98 7.157-15.98 15.986-15.98 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zm61.942 0c0 8.825-7.157 15.98-15.986 15.98-8.828 0-15.986-7.155-15.986-15.98s7.158-15.98 15.986-15.98c8.83 0 15.986 7.155 15.986 15.98zM32.478 759c0 8.824-7.157 15.979-15.986 15.979S.506 767.825.506 759c0-8.824 7.157-15.98 15.986-15.98s15.986 7.156 15.986 15.98zm61.942 0c0 8.824-7.157 15.979-15.986 15.979S62.448 767.825 62.448 759c0-8.824 7.157-15.98 15.986-15.98S94.42 750.177 94.42 759zm61.942 0c0 8.824-7.157 15.979-15.986 15.979S124.39 767.825 124.39 759c0-8.824 7.157-15.98 15.986-15.98s15.986 7.156 15.986 15.98zm61.942 0c0 8.824-7.157 15.979-15.986 15.979s-15.986-7.155-15.986-15.98c0-8.824 7.157-15.98 15.986-15.98s15.986 7.156 15.986 15.98zm61.942 0c0 8.824-7.157 15.979-15.986 15.979-8.828 0-15.986-7.155-15.986-15.98 0-8.824 7.157-15.98 15.986-15.98s15.986 7.156 15.986 15.98zm61.942 0c0 8.824-7.157 15.979-15.986 15.979s-15.986-7.155-15.986-15.98c0-8.824 7.157-15.98 15.986-15.98s15.986 7.156 15.986 15.98zm61.942 0c0 8.824-7.157 15.979-15.986 15.979-8.828 0-15.986-7.155-15.986-15.98 0-8.824 7.158-15.98 15.986-15.98 8.83 0 15.986 7.156 15.986 15.98zm61.942 0c0 8.824-7.157 15.979-15.986 15.979-8.828 0-15.986-7.155-15.986-15.98 0-8.824 7.158-15.98 15.986-15.98 8.83 0 15.986 7.156 15.986 15.98z" />
+                            </g>
+                        </g>
+                    </symbol>
+
+                </svg>
+            </div>
+        </div>
+</body> 
+
+<script src="assets/modernizr.js"></script>
+<script src="assets/jquery.js"></script>
+<script src="assets/jcf.js"></script>
+<script src="assets/jcf.select.js"></script>
+<script src="assets/jcf.radio.js"></script>
+<script src="assets/dataTabs.js"></script>
+<script src="assets/smoothscroll.js"></script>
+<script src="assets/aos.js"></script>
+<script src="assets/mmenu-light.js"></script>
+<script src="assets/swiper.min.js"></script>
+<script src="assets/custom.js"></script>
+<script src="assets/index.js"></script>
+
+
+</html>

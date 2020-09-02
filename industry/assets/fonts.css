@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Akzidenz-Grotesk';
+    src: url('AkzidenzGroteskPro-BoldCn.woff2') format('woff2'),
+        url('AkzidenzGroteskPro-BoldCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk';
+    src: url('AkzidenzGroteskPro-XBdCn.woff2') format('woff2'),
+        url('AkzidenzGroteskPro-XBdCn.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk';
+    src: url('AkzidenzGroteskPro-LightCn.woff2') format('woff2'),
+        url('AkzidenzGroteskPro-LightCn.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk';
+    src: url('AkzidenzGroteskPro-Cn.woff2') format('woff2'),
+        url('AkzidenzGroteskPro-Cn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

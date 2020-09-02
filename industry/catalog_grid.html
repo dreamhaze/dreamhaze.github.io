@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/normalise.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/core.css">
+    <link rel="stylesheet" type="text/css" href="assets/jcf.css">
+    <link rel="stylesheet" type="text/css" href="assets/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/mmenu-light.css">
+    <link rel="stylesheet" type="text/css" href="assets/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css">
+    
+    <link rel="stylesheet" href="animate.css" />
+</head>
+
+<body>                
+    <section class="header_lines">
+        <div class="container">
+            <div class="header_common">
+                <div class="cell-6 header_common_left show-flex flex-middle">
+                    <div class="catalog__header_wrap show-flex flex-start">
+                        <form class="collection-filter" action="/"
+                            method="get">
+                            <!-- цена -->
+                            <div class="filter js-filter-section is-active-container"
+                                data-tabs-container="">
+                                <div class="filter-title">
+                                    <div class="is-button-active"
+                                        data-tab-anchor="price">
+                                        Цена, руб.</div>
+                                </div>
+                                <div class="filter-items-wrapper is-tab-active"
+                                    data-tab-target="price">
+                                    <div
+                                        class="filter-body range-slider js-filter-range-slider-price">
+                                        <span
+                                            class="irs js-irs-0"><span
+                                                class="irs"><span
+                                                    class="irs-line"
+                                                    tabindex="0"><span
+                                                        class="irs-line-left"></span><span
+                                                        class="irs-line-mid"></span><span
+                                                        class="irs-line-right"></span></span><span
+                                                    class="irs-min"
+                                                    style="visibility: hidden;">800</span>
+                                                <span
+                                                    class="irs-max"
+                                                    style="visibility: hidden;">4
+                                                    000</span><span
+                                                    class="irs-from"
+                                                    style="visibility: visible; left: 0%;">800</span><span
+                                                    class="irs-from"
+                                                    style="visibility: visible;">4
+                                                    000</span>
+                                                <span
+                                                    class="irs-grid"></span><span
+                                                    class="irs-bar"
+                                                    style="left: 2%; width: 96%;"></span><span
+                                                    class="irs-shadow shadow-from"
+                                                    style="display: none;"></span><span
+                                                    class="irs-shadow shadow-to"
+                                                    style="display: none;"></span>
+                                                <span
+                                                    class="irs-slider from"
+                                                    style="left: 0%;"></span><span
+                                                    class="irs-slider to"
+                                                    style="left: 93%;"></span></span><input
+                                                type="text"
+                                                class="js-filter-range-placeholder irs-hidden-input"
+                                                data-min="800"
+                                                data-max="4000"
+                                                data-from="800"
+                                                data-to="4000"
+                                                data-range-placeholder=""
+                                                tabindex="-1"
+                                                readonly=""
+                                                hidden="">
+                                            <div
+                                                class="range-slider-input row is-grid flex-center hide">
+                                                <div class="cell-6">
+                                                    <input
+                                                        class="input-field input-range hidden"
+                                                        name="price_min"
+                                                        placeholder="800"
+                                                        value="800"
+                                                        data-range-from=""
+                                                        disabled="">
+                                                </div>
+                                                <div class="cell-6">
+                                                    <input
+                                                        class="input-field input-range text-right hidden"
+                                                        name="price_max"
+                                                        placeholder="4000"
+                                                        value="4000"
+                                                        data-range-to=""
+                                                        disabled="">
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / цена -->
+                        </form>
+                    </div>
+                    <form action="" method="get" id="options"
+                        class="grid__control show-flex flex-start">
+                        <div
+                            class="catalog__order flex-start flex-middle">
+                            <label class="label-field">
+                                Сортировка:</label>
+                            <select class="select_custom"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option value="v1">по алфавиту
+                                </option>
+                                <option value="v2">по популярности
+                                </option>
+                                <option value="v3">по возрастанию
+                                    цены</option>
+                                <option value="v4">по дате
+                                    добавления</option>
+                                <option value="v5">По убыванию
+                                    популярности</option>
+                                <option value="v6">По убыванию цены
+                                </option>
+                                <option value="v7">По убыванию
+                                    названий</option>
+                                <option value="v8">По убыванию даты
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="cell-6 header_common_right show-flex flex-end flex-middle">
+                    <div class="filter__tags row flex-end">
+                        <label class="filter__tag">
+                            <input type="radio" name="rtest"
+                                id="rad1" />
+                            <span class="filter__tags_control">
+                                Готовые заводы и линии
+                            </span>
+                        </label>
+                        <label class="filter__tag">
+                            <input type="radio" name="rtest"
+                                id="rad2" />
+                            <span class="filter__tags_control">
+                                Спецтехника
+                            </span>
+                        </label>
+                        <label class="filter__tag">
+                            <input type="radio" name="rtest"
+                                id="rad3" />
+                            <span class="filter__tags_control">
+                                Комплектующие
+                            </span>
+                        </label>
+                        <label class="filter__tag">
+                            <input type="radio" name="rtest"
+                                id="rad4" />
+                            <span class="filter__tags_control">
+                                Всё
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="collection container"> 
+  
+        <div class="collection__body">
+            
+            <ul class="product__list row">
+                <li class="cell-6 product_card animate__animated animate__bounce lines ">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div class="product-left-col">
+                                <div class="product-type_wrap">
+                                    <div class="product-type ind-1">
+                                    </div>
+                                </div>
+                                <div class="small-img_wrap"
+                                    style="background: url('images/img-line1.jpg') no-repeat center center / cover transparent;">
+                                </div>
+                                <div class="small-img_wrap"
+                                    style="background: url('images/img-line2.jpg') no-repeat center center / cover transparent;">
+                                </div>
+                                <div class="small-img_wrap"
+                                    style="background: url('images/img-line3.jpg') no-repeat center center / cover transparent;">
+                                </div>
+                            </div>
+                            <div
+                                class="product-right-col">
+                                <div class="row">
+                                    <a href="#"
+                                        class="prod-title_link">
+                                        Асфальтобетонный
+                                        завод LB
+                                        500 40
+                                        тонн в
+                                        час
+                                    </a>
+                                </div>
+                                <span
+                                    class="desc__text_wrap">
+                                    <p
+                                        class="desc__text">
+                                        Асфальтобетонный
+                                        завод
+                                        LB500
+                                        использует
+                                        передовую
+                                        технологию
+                                        управления
+                                        и
+                                        смешивания,
+                                        которая
+                                        позволяет
+                                        производить
+                                        асфальт
+                                        высочайшего
+                                        качества.
+                                        Линия
+                                        обладает
+                                        компактной
+                                        структурой,
+                                        показывает
+                                        стабильность
+                                        и
+                                        надёжность
+                                        на всех
+                                        этапах
+                                        производства.
+                                        Основные
+                                        агрегаты
+                                        и
+                                        электроника
+                                        изготовлены
+                                        в Италии
+                                        и
+                                        отвечают
+                                        самым
+                                        высоким
+                                        стандартам
+                                        качества.
+                                        Завод
+                                        полностью
+                                        отвечает
+                                        экологическим
+                                        требованиям
+                                        к
+                                        производству.
+
+                                    </p>
+                                </span>
+                                <div
+                                    class="row prod-ready flex-between flex-middle">
+                                    <div
+                                        class="price_wrap">
+                                        Срок
+                                        изготовления
+                                    </div>
+                                    <b
+                                        class="ready-time">
+                                        <span
+                                            class="ready-time_num">20</span>
+                                        дней
+                                    </b>
+                                </div>
+                                <div
+                                    class="row prod-stages">
+                                    <div
+                                        class="prod-stage">
+                                        Проект
+                                    </div>
+                                    <div
+                                        class="prod-stage">
+                                        Доставка
+                                    </div>
+                                    <div
+                                        class="prod-stage">
+                                        Установка
+                                    </div>
+                                </div>
+                                <div
+                                    class="row prod-info">
+                                    <div
+                                        class="prod-certified">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon shield">
+                                                <use
+                                                    xlink:href="#shield">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        Продукция
+                                        сертифицирована
+                                        <br> по
+                                        международным
+                                        стандартам
+                                    </div>
+                                    <div
+                                        class="prod-bundle">
+                                        <strong
+                                            class="prod-bundle_num row">12</strong>
+                                        <span
+                                            class="prod-bundle_sub">
+                                            Количество
+                                            наименований
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row product-button">
+                                    <a href="#"
+                                        class="button1 button__wrap">
+                                        <span
+                                            class="button_light__title">
+                                            Узнать
+                                            цену
+                                        </span>
+                                        <div
+                                            class="button_light__square">
+                                            <div
+                                                class="svg_wrap">
+                                                <svg
+                                                    class="icon arrow-right">
+                                                    <use
+                                                        xlink:href="#arrow-right">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-3 product_card animate__animated animate__bounce mini">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div class="product-top-row row flex-between flex-top">
+                                <div
+                                    class="sticker__wrap">
+                                    <div
+                                        class="stiker stiker-hit">
+                                        хит
+                                        продаж
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="bttn-compares is-added">
+                                    <svg
+                                        class="icon compares">
+                                        <use
+                                            xlink:href="#compares">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#"
+                                    class="prod-title_link">
+                                    Роторная
+                                    дробилка
+                                    серии PFW
+                                </a>
+                            </div>
+                            <div class="row">
+                                <span
+                                    class="desc__text_wrap">
+                                    Измельчает
+                                    материалы с
+                                    помощью
+                                    ударной силы
+                                    и
+                                    высокоскоростного
+                                    взаимодействия
+                                </span>
+                            </div>
+                            <div
+                                class="product-img__wrap">
+                                <a href="#"
+                                    class="product-img__relative">
+                                    <img class="product-img"
+                                        src="images/prod_img_1.jpg">
+                                </a>
+                            </div>
+                            <div class="row flex-between flex-top">
+                                <div class="price_wrap">
+                                    <s
+                                        class="price_old">
+                                        2150 р.
+                                    </s>
+                                    <b class="price">
+                                        1990 р.
+                                    </b>
+                                </div>
+                                <div class="product__available available_true "
+                                    data-product-available="">
+                                    В наличии
+
+                                </div>
+                            </div>
+                            <div class="row product-bottom-row">
+                                <div class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-1">
+
+                                    </div>
+                                </div>
+                                <a href="#" class="button1 button__wrap">
+                                    <span
+                                        class="button_light__title">
+                                        купить
+                                    </span>
+                                    <div
+                                        class="button_light__square">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon cart">
+                                                <use
+                                                    xlink:href="#cart">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-3 product_card animate__animated animate__bounce mini">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div class="product-top-row row flex-between flex-top">
+                                <div
+                                    class="sticker__wrap">
+                                    <div
+                                        class="stiker stiker-sale">
+                                        Выгодно
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="bttn-compares">
+                                    <svg
+                                        class="icon compares">
+                                        <use
+                                            xlink:href="#compares">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#"
+                                    class="prod-title_link">
+                                    Роторная
+                                    дробилка
+                                    LIMING PF
+                                </a>
+                            </div>
+                            <div class="row">
+                                <span
+                                    class="desc__text_wrap">
+                                    Предназначена
+                                    для
+                                    дробления
+                                    различного
+                                    материала,
+                                    такого как
+                                    руда, шлак и
+                                    бетон
+                                </span>
+                            </div>
+                            <div
+                                class="product-img__wrap">
+                                <a href="#"
+                                    class="product-img__relative">
+                                    <img class="product-img"
+                                        src="images/prod_img_2.jpg">
+                                </a>
+                            </div>
+                            <div
+                                class="row flex-between flex-top">
+                                <div class="price_wrap">
+                                    <b class="price">
+                                        1 290
+                                        000 р.
+                                    </b>
+                                </div>
+                                <div class="product__available available_true "
+                                    data-product-available="">
+                                    В наличии
+
+                                </div>
+                            </div>
+                            <div class="row product-bottom-row">
+                                <div
+                                    class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-3">
+
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="button1 button__wrap">
+                                    <span
+                                        class="button_light__title">
+                                        купить
+                                    </span>
+                                    <div
+                                        class="button_light__square">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon cart">
+                                                <use
+                                                    xlink:href="#cart">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-3 product_card animate__animated animate__bounce mini">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div
+                                class="product-top-row row flex-between flex-top">
+                                <div
+                                    class="sticker__wrap">
+                                    <div
+                                        class="stiker stiker-sale">
+                                        Выгодно
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="bttn-compares">
+                                    <svg
+                                        class="icon compares">
+                                        <use
+                                            xlink:href="#compares">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#"
+                                    class="prod-title_link">
+                                    Роторная
+                                    дробилка
+                                    LIMING PF
+                                </a>
+                            </div>
+                            <div class="row">
+                                <span
+                                    class="desc__text_wrap">
+                                    Предназначена
+                                    для
+                                    дробления
+                                    различного
+                                    материала,
+                                    такого как
+                                    руда, шлак и
+                                    бетон
+                                </span>
+                            </div>
+                            <div
+                                class="product-img__wrap">
+                                <a href="#"
+                                    class="product-img__relative">
+                                    <img class="product-img"
+                                        src="images/prod_img_2.jpg">
+                                </a>
+                            </div>
+                            <div
+                                class="row flex-between flex-top">
+                                <div class="price_wrap">
+                                    <b class="price">
+                                        1 290
+                                        000 р.
+                                    </b>
+                                </div>
+                                <div class="product__available available_true "
+                                    data-product-available="">
+                                    В наличии
+
+                                </div>
+                            </div>
+                            <div
+                                class="row product-bottom-row">
+                                <div
+                                    class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-3">
+
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="button1 button__wrap">
+                                    <span
+                                        class="button_light__title">
+                                        купить
+                                    </span>
+                                    <div
+                                        class="button_light__square">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon cart">
+                                                <use
+                                                    xlink:href="#cart">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-6 product_card animate__animated animate__bounce lines">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div
+                                class="product-left-col">
+                                <div
+                                    class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-2">
+                                    </div>
+                                </div>
+                                <div class="small-img_wrap"
+                                    style="background: url('images/img-line1.jpg') no-repeat center center / cover transparent;">
+                                </div>
+                                <div class="small-img_wrap"
+                                    style="background: url('images/img-line2.jpg') no-repeat center center / cover transparent;">
+                                </div>
+                                <div class="small-img_wrap"
+                                    style="background: url('images/img-line3.jpg') no-repeat center center / cover transparent;">
+                                </div>
+                            </div>
+                            <div
+                                class="product-right-col">
+                                <div class="row">
+                                    <a href="#"
+                                        class="prod-title_link">
+                                        Линия
+                                        производства
+                                        сахара
+                                        из
+                                        сахарной
+                                        свеклы
+                                        на 100
+                                        т/с
+                                    </a>
+                                </div>
+                                <span
+                                    class="desc__text_wrap">
+                                    <p
+                                        class="desc__text">
+                                        Комплекс
+                                        обордования,
+                                        который
+                                        позволяет
+                                        производить
+                                        сахар-песок
+                                        из
+                                        сахарной
+                                        свеклы.
+                                        Процесс
+                                        включает
+                                        несколько
+                                        стадий:
+                                        подача
+                                        свеклы и
+                                        очистка
+                                        ее от
+                                        примесей,
+                                        получение
+                                        диффузионного
+                                        сока из
+                                        свекловичной
+                                        стружки,
+                                        очистка
+                                        диффузионного
+                                        сока,
+                                        сгущение
+                                        сока
+                                        выпариванием,
+                                        варка
+                                        утфеля и
+                                        получение
+                                        кристаллического
+                                        сахара,
+                                        сушка,
+                                        охлаждение
+                                        и
+                                        хранение
+                                        сахара-песка.
+                                        При
+                                        такой
+                                        производительности
+                                        на
+                                        входе,
+                                        на
+                                        выходе
+                                        линия
+                                        выдаёт
+                                        12-14
+                                        тонн
+                                        готового
+                                        продукта
+                                        в сутки.
+
+                                    </p>
+                                </span>
+                                <div
+                                    class="row prod-ready flex-between flex-middle">
+                                    <div
+                                        class="price_wrap">
+                                        Срок
+                                        изготовления
+                                    </div>
+                                    <b
+                                        class="ready-time">
+                                        <span
+                                            class="ready-time_num">20</span>
+                                        дней
+                                    </b>
+                                </div>
+                                <div
+                                    class="row prod-stages">
+                                    <div
+                                        class="prod-stage">
+                                        Проект
+                                    </div>
+                                    <div
+                                        class="prod-stage">
+                                        Доставка
+                                    </div>
+                                    <div
+                                        class="prod-stage">
+                                        Установка
+                                    </div>
+                                </div>
+                                <div
+                                    class="row prod-info">
+                                    <div
+                                        class="prod-certified">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon shield">
+                                                <use
+                                                    xlink:href="#shield">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        Продукция
+                                        сертифицирована
+                                        <br> по
+                                        международным
+                                        стандартам
+                                    </div>
+                                    <div
+                                        class="prod-bundle">
+                                        <strong
+                                            class="prod-bundle_num row">12</strong>
+                                        <span
+                                            class="prod-bundle_sub">
+                                            Количество
+                                            наименований
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row product-button">
+                                    <a href="#"
+                                        class="button1 button__wrap">
+                                        <span
+                                            class="button_light__title">
+                                            Узнать
+                                            цену
+                                        </span>
+                                        <div
+                                            class="button_light__square">
+                                            <div
+                                                class="svg_wrap">
+                                                <svg
+                                                    class="icon arrow-right">
+                                                    <use
+                                                        xlink:href="#arrow-right">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-3 product_card animate__animated animate__bounce mini">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div
+                                class="product-top-row row flex-between flex-top">
+                                <div
+                                    class="sticker__wrap">
+                                    <div
+                                        class="stiker stiker-new">
+                                        новинка
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="bttn-compares">
+                                    <svg
+                                        class="icon compares">
+                                        <use
+                                            xlink:href="#compares">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#"
+                                    class="prod-title_link">
+                                    Роторная
+                                    дробилка
+                                    серии PFW
+                                </a>
+                            </div>
+                            <div class="row">
+                                <span
+                                    class="desc__text_wrap">
+                                    Измельчает
+                                    материалы с
+                                    помощью
+                                    ударной силы
+                                    и
+                                    высокоскоростного
+                                    взаимодействия
+                                </span>
+                            </div>
+                            <div
+                                class="product-img__wrap">
+                                <a href="#"
+                                    class="product-img__relative">
+                                    <img class="product-img"
+                                        src="images/prod_img_1.jpg">
+                                </a>
+                            </div>
+                            <div
+                                class="row flex-between flex-top">
+                                <div class="price_wrap">
+                                    <s
+                                        class="price_old">
+                                        2150 р.
+                                    </s>
+                                    <b class="price">
+                                        1990 р.
+                                    </b>
+                                </div>
+                                <div class="product__available available_true "
+                                    data-product-available="">
+                                    В наличии
+
+                                </div>
+                            </div>
+                            <div
+                                class="row product-bottom-row">
+                                <div
+                                    class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-1">
+
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="button1 button__wrap">
+                                    <span
+                                        class="button_light__title">
+                                        купить
+                                    </span>
+                                    <div
+                                        class="button_light__square">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon cart">
+                                                <use
+                                                    xlink:href="#cart">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-3 product_card animate__animated animate__bounce mini">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div
+                                class="product-top-row row flex-between flex-top">
+                                <div
+                                    class="sticker__wrap">
+                                    <div
+                                        class="stiker stiker-sale">
+                                        Выгодно
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="bttn-compares">
+                                    <svg
+                                        class="icon compares">
+                                        <use
+                                            xlink:href="#compares">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#"
+                                    class="prod-title_link">
+                                    Роторная
+                                    дробилка
+                                    LIMING PF
+                                </a>
+                            </div>
+                            <div class="row">
+                                <span
+                                    class="desc__text_wrap">
+                                    Предназначена
+                                    для
+                                    дробления
+                                    различного
+                                    материала,
+                                    такого как
+                                    руда, шлак и
+                                    бетон
+                                </span>
+                            </div>
+                            <div
+                                class="product-img__wrap">
+                                <a href="#"
+                                    class="product-img__relative">
+                                    <img class="product-img"
+                                        src="images/prod_img_2.jpg">
+                                </a>
+                            </div>
+                            <div
+                                class="row flex-between flex-top">
+                                <div class="price_wrap">
+                                    <b class="price">
+                                        1 290
+                                        000 р.
+                                    </b>
+                                </div>
+                                <div class="product__available available_true "
+                                    data-product-available="">
+                                    В наличии
+
+                                </div>
+                            </div>
+                            <div
+                                class="row product-bottom-row">
+                                <div
+                                    class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-3">
+
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="button1 button__wrap">
+                                    <span
+                                        class="button_light__title">
+                                        купить
+                                    </span>
+                                    <div
+                                        class="button_light__square">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon cart">
+                                                <use
+                                                    xlink:href="#cart">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="cell-3 product_card animate__animated animate__bounce mini">
+                    <form class="product-block"
+                        action="/cart_items"
+                        method="post">
+                        <div class="product-wrapper">
+                            <div class="product-top-row row flex-between flex-top">
+                                <div
+                                    class="sticker__wrap">
+                                    <div
+                                        class="stiker stiker-sale">
+                                        Выгодно
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="bttn-compares">
+                                    <svg
+                                        class="icon compares">
+                                        <use
+                                            xlink:href="#compares">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="#"
+                                    class="prod-title_link">
+                                    Роторная
+                                    дробилка
+                                    LIMING PF
+                                </a>
+                            </div>
+                            <div class="row">
+                                <span
+                                    class="desc__text_wrap">
+                                    Предназначена
+                                    для
+                                    дробления
+                                    различного
+                                    материала,
+                                    такого как
+                                    руда, шлак и
+                                    бетон
+                                </span>
+                            </div>
+                            <div
+                                class="product-img__wrap">
+                                <a href="#"
+                                    class="product-img__relative">
+                                    <img class="product-img"
+                                        src="images/prod_img_2.jpg">
+                                </a>
+                            </div>
+                            <div
+                                class="row flex-between flex-top">
+                                <div class="price_wrap">
+                                    <b class="price">
+                                        1 290
+                                        000 р.
+                                    </b>
+                                </div>
+                                <div class="product__available available_true "
+                                    data-product-available="">
+                                    В наличии
+
+                                </div>
+                            </div>
+                            <div
+                                class="row product-bottom-row">
+                                <div
+                                    class="product-type_wrap">
+                                    <div
+                                        class="product-type ind-3">
+
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="button1 button__wrap">
+                                    <span
+                                        class="button_light__title">
+                                        купить
+                                    </span>
+                                    <div
+                                        class="button_light__square">
+                                        <div
+                                            class="svg_wrap">
+                                            <svg
+                                                class="icon cart">
+                                                <use
+                                                    xlink:href="#cart">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+<script src="assets/modernizr.js"></script>
+<script src="assets/jquery.js"></script>
+<script src="assets/jcf.js"></script>
+<script src="assets/jcf.select.js"></script>
+<script src="assets/jcf.radio.js"></script>
+<script src="assets/dataTabs.js"></script>
+<script src="assets/smoothscroll.js"></script>
+<script src="assets/aos.js"></script>
+<script src="assets/mmenu-light.js"></script>
+<script src="assets/swiper.min.js"></script>
+<script src="assets/custom.js"></script>
+<script src="assets/index.js"></script>
+
+
+</html>

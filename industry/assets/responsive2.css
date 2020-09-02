@@ -1,0 +1,117 @@
+@media screen and (max-height: 1440px) {
+     :root {
+        --sidebar_w: 120px;
+    }
+    .text_vertical {
+        font-size: 27px;
+    }
+    .side-bttn {
+        flex-basis: 150px;
+    }
+}
+
+@media screen and (max-height: 1200px) {
+     :root {
+        --sidebar_w: 100px;
+    }
+    .text_vertical {
+        font-size: 25px;
+    }
+    .side-bttn {
+        flex-basis: 115px;
+    } 
+    .bttn__phone .submenu__content {
+        top: auto;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-height: 1024px) {
+     :root {
+        --sidebar_w: 90px;
+    }
+    .hero__main .bttn__delimitter {
+        flex-grow: .1;
+    }
+    
+    .bttn__email .submenu__content {
+        top: auto;
+        bottom: 0;
+    }
+    .text_vertical {
+        display: none;
+    }
+    .hide-low-height {
+        display: none;
+    }
+    .show-low-height {
+        display: flex!important;
+    }
+    .button_to-top {
+        flex-basis: 55%;
+        max-height: 110px;
+        padding-bottom: 35px;
+    }
+    .button_to-top {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-height: 920px) {
+     :root {
+        --sidebar_w: 80px;
+    }
+    .hero__main .bttn__delimitter {
+        flex-grow: 0;
+    }
+    .side-bttn {
+        flex-basis: 75px;
+    }
+    .window__text,
+    .hero__text {
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .hero_logotype {
+        width: 370px;
+        padding-top: 17px;
+    }
+    .logotype_sub {
+        font-size: 17px;
+        left: -2px;
+    }
+    .hero__text_wrapper > .container {
+        display: flex;
+        align-items: center;
+    }
+    .hero__item_wrap {
+        padding: 1vh 0;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    :root {
+        --sidebar_w: 60px;
+    }
+    .bttn__cart .submenu__content {
+        top: auto;
+    }
+    .hero-arrow__link .text {
+        display: none;
+    }
+    .drop-search {
+        top: auto;
+        bottom: 100%;
+        padding: 25px 27px 0;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    
+    .window__text, .hero__text {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 480px) {}

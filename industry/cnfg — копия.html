@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/normalise.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/core.css">
+    <link rel="stylesheet" type="text/css" href="assets/jcf.css">
+    <link rel="stylesheet" type="text/css" href="assets/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/mmenu-light.css">
+    <link rel="stylesheet" type="text/css" href="assets/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css">
+</head>
+
+<body>
+    <section class="main-tabs container active" id="cnfg-v1">
+        <div class="main-tabs_wrap js-tabs is-active-container" data-tabs-container="">
+            <div class="tabs__buttons_wrap modal-fixed" id="main-departure">
+                <div class="tabs__buttons_flex">
+                    <span data-tab-anchor="1" class="tabs__button js-tabs-item text text_bold is-button-close">
+                            Поиск по отрасли
+                        </span>
+                    <span data-tab-anchor="2" data-activate-config="true" class="tabs__button js-tabs-item text text_bold is-button-active">
+                            Поиск по задаче
+                        </span>
+                    <span data-tab-anchor="3" class="tabs__button js-tabs-item text text_bold is-button-close">
+                            Бренды
+                        </span>
+                    <span data-deactivate-config="true" class="tabs__button deactivate-config">  
+                            <svg class="icon close-cross">
+                                <use xlink:href="#close-cross"></use>
+                            </svg>
+                        </span>
+                </div>
+            </div>
+            <div class="tabs__content">
+                <div data-tab-target="1" class="is-tab-close" style="display: none;">
+                    <ul class="industries_list">
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+                                        <img src="images/industry_figure1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Металлургия</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Горнодобывающая промышленность</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Машиностроение</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure4.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Строительство</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure5.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Сельское
+                                хозяйтсво</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure6.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Транспорт и логистика</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure7.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Энергетика</span>
+                        </li>
+                        <li class="industries_item">
+                            <div class="industry__figure">
+                                <div class="industry__figure_wrap">
+                                    <div class="industry_svg">
+
+                                        <img src="images/industry_figure8.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="industry__title">Экология</span>
+                        </li>
+                    </ul>
+                </div>
+                <div data-tab-target="2" class="is-tab-active" style="display: block;">
+                </div>
+                <div data-tab-target="3" class="is-tab-close" style="display: none;">
+                    Содержимое 3 вкладки
+                </div>
+            </div>
+
+            <div id="modal-container" class="one">
+                <div class="modal-background">
+                    <div class="modal">
+                        <div class="hide">
+                            <h2>Требуется доступ</h2>
+                            <p>Оставьте заявку</p>
+                        </div>
+                        <div class="questions_wrap flex-center">
+                            <ul id="questions" class="questions_list">
+                                <li>
+                                    <p class="question_text">что вас интересует?</p>  
+                                    <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option value="v1" disabled>Выбрать</option>
+                                        <option class="color red" value="v2">Option 1</option>
+                                        <option class="color green" value="v3">Option 2</option>
+                                        <option class="color blue" value="v4">Option 3</option>
+                                        <option value="v5">Option 4</option>
+                                        <option value="v6">Option 5</option>
+                                    </select>
+                                </li> 
+                                <li>
+                                    <p class="question_text">что вас интересует?</p>  
+                                    <select class="custom color" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                        <option value="v1">Custom drop in area</option>
+                                        <option class="color red" value="v2">Option 1</option>
+                                        <option class="color green" value="v3">Option 2</option>
+                                        <option class="color blue" value="v4">Option 3</option>
+                                        <option value="v5">Option 4</option>
+                                        <option value="v6">Option 5</option>
+                                    </select>
+                                </li> 
+                                <li>
+                                    <p class="question_text">Что желаете купить?</p>
+                                    <select data-placeholder="Выберите категорию продукта">
+                                        <option data-connection="phoneSelect" value="Phones">Телефоны</option>
+                                        <option data-connection="notebookSelect" value="Notebooks">Ноутбуки</option>
+                                        <option data-connection="tabletSelect" value="Tablets">Планшеты</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/modernizr.js"></script>
+<script src="assets/jquery.js"></script>
+<script src="assets/jcf.js"></script>
+<script src="assets/jcf.select.js"></script>
+<script src="assets/dataTabs.js"></script>
+<script src="assets/smoothscroll.js"></script>
+<script src="assets/aos.js"></script>
+<script src="assets/mmenu-light.js"></script>
+<script src="assets/swiper.min.js"></script>
+<script src="assets/custom.js"></script>
+<script src="assets/index.js"></script>
+
+</html>
