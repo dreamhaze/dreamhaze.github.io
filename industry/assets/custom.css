@@ -2194,6 +2194,7 @@ svg.hero-arrow {
 .callback__frame {
     border: 8px solid var(--color_brdr);
     height: 500px;
+    padding: 0;
     background: url("../images/map.jpg") no-repeat center center / cover transparent;
     --color_main__light: white;
     --color_main: transparent; 
