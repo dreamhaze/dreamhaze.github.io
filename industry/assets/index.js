@@ -32,15 +32,18 @@ var swiperMain = new Swiper('.hero__slider', {
     },
 });
 
-$(window).scroll(function () {
-    function parallax() {
-        var scrolled = $(window).scrollTop();
-        var position = $( ".icons__line_parallax" ).position().top - $(window).height()*2;  
-        if  (scrolled >= position) { 
-            $('.icons__line_parallax').css('background-position-y', 90 - (scrolled * 0.13) + 'px');
-        }
-    }
+
+$(window).scroll(function (e) {
+    parallax();
 });
+
+function parallax() {
+    var scrolled = $(window).scrollTop();
+    var position = $( ".icons__line_parallax" ).position().top - $(window).height()*2;  
+    if  (scrolled >= position) { 
+        $('.icons__line_parallax').css('background-position-y', 90 - (scrolled * 0.13) + 'px');
+    }
+}
 
 
 /**

@@ -166,8 +166,8 @@ $(function () {
             }
         });
     }); 
-    $('.line__carousel .product__list_slider').each(function (index) {
-        $(this).attr('id', 'carousel-line-' + index);
+    $('.line__carousel').each(function (index) {
+        $(this).attr('id', 'carousel-line-section-' + index);
     });
     $('.line__carousel .product__list_slider').each(function (index) {
         let product__lines_sliders = new Swiper(this, {
@@ -177,8 +177,8 @@ $(function () {
             autoplay: false,
             loop: true,
             navigation: {
-                nextEl: '.line__carousel .swiper-button-next',
-                prevEl: '.line__carousel .swiper-button-prev',
+                nextEl: '.line__carousel .grid__control .swiper-button-next',
+                prevEl: '.line__carousel .grid__control .swiper-button-prev',
             },
             breakpoints: {
                 690: {
@@ -196,40 +196,11 @@ $(function () {
         if (!!swActiveTab[0].querySelector('.carousel .product__list_slider')) {  
             let swNavContainer = swContainer.querySelectorAll('.grid__control');
             let activeSwiper = swActiveTab[0].querySelector('.carousel .product__list_slider').swiper;
-            activeSwiper.navigation.nextEl = swNavContainer[0].querySelector('.swiper-button-next'); 
-            activeSwiper.navigation.prevEl = swNavContainer[0].querySelector('.swiper-button-prev'); 
-            activeSwiper.navigation.update();   
-            activeSwiper.update();
+            console.log(activeSwiper); 
+            activeSwiper.navigation.nextEl = '#' + swContainer.id + ' .grid__control .swiper-button-next'; 
+            activeSwiper.navigation.prevEl = '#' + swContainer.id + ' .grid__control .swiper-button-prev';    
         }
-    });
-    $('.product__carousel .js-tabs-item').on('click', function(e) {  
-        let activeSwiper = $(this).closest('.carousel__body').find('.is-tab-active .product__list_slider');
-        var activeSwiperInit = new Swiper(activeSwiper, {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            speed: 300,
-            autoplay: false,
-            loop: true,
-            navigation: {
-              nextEl: '.product__carousel .grid__control .swiper-button-next',
-              prevEl: '.product__carousel .grid__control .swiper-button-prev',
-            },
-            breakpoints: {
-                690: {
-                    slidesPerView: 1
-                },
-                900: {
-                    slidesPerView: 2
-                },
-                1500: {
-                    slidesPerView: 2
-                },
-                1675: {
-                    slidesPerView: 3
-                }
-            } 
-        });
-    });
+    }); 
 });
 
 
@@ -549,54 +520,4 @@ $('div.side-bttn').on('click', function(e) {
         $( '.submenu__content_wrap .co-form--login #email' ).focus(); 
     }, 100); 
   }
-}); 
-function handleStart(evt) { 
-    console.log("touch start");
-    let allTouched = Array.from(document.querySelectorAll('.product-block.touched')); 
-    let links = this.querySelectorAll("a");
-
-    for (let link of links) {
-        if ( link.classList.contains("prod-title_link") ) {
-            console.log(link.getAttribute("href"));    
-            var goLink = link.getAttribute("href");  
-        }
-    } 
-    if ( !this.classList.contains("touched") ) {
-        allTouched.forEach(node => {
-            node.classList.remove("touched");
-        });
-        this.addEventListener("click", function (e) {
-            e.preventDefault();
-            console.log("blocked touch-event");
-        });  
-    } else {   
-        evt.preventDefault();
-         location.href = goLink;
-        //  console.log(this.getAttribute('href')); 
-    }
-}
-function handleEnd() {  
-    console.log("touch end + touched");
-    this.classList.add("touched"); 
-} 
-function testTouch(ev) {  
-    console.log( ev.touches, ev.type); 
-} 
-window.addEventListener("load", function () {
-    if (document.getElementsByClassName("product-block").length > 0) {    
-        let cards = document.getElementsByClassName("product-block"); 
-        for(var z = 0; z < cards.length; z++) { 
-            let card = cards[z];
-            console.log(!card.classList.contains("touched"));   
-            card.addEventListener("touchstart", testTouch, false);  
-            card.addEventListener("touchend", testTouch, false);  
-        }
-    }
-}); 
-
-if ('ontouchstart' in window) {
-    $("a").click(function (e) {
-        e.preventDefault();
-        // trigger tooltip...
-    });
-}
+});  

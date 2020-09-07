@@ -1539,8 +1539,7 @@ svg.hero-arrow {
 
 .industry__title {
     width: 139px;  
-    color: var(--color_black);
-    background-color: white;
+    color: var(--color_black); 
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -2199,7 +2198,10 @@ svg.hero-arrow {
     --color_main__light: white;
     --color_main: transparent; 
 }
-
+.map_ind {
+    width: 100%;
+    height: 100%;
+}
 .contacts__frame:hover .button_light__wrap,
 .callback__frame:hover .button_light__wrap { 
     --color_main__light: white;
@@ -2967,7 +2969,7 @@ svg.hero-arrow {
 }
 
 .icons__line_parallax {
-    background: url("../images/parallax_bg_1.jpg") no-repeat bottom center transparent;
+    background: url("../images/parallax_bg_1.jpg") repeat bottom center / 100% transparent;
 }
 
 .icon__block {
