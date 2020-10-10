@@ -4465,7 +4465,7 @@ a.breadcrumb-link:hover {
         transform: none;
     }
 }
-
+ 
 @keyframes rotate-up {
     100% {
         transform: rotateZ(-4deg);

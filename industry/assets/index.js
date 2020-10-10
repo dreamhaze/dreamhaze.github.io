@@ -33,7 +33,7 @@ var swiperMain = new Swiper('.hero__slider', {
 });
 
 
-$(window).scroll(function (e) {
+$(window).scroll(function () {
     parallax();
 });
 

@@ -491,6 +491,349 @@ $(function () {
 
 // }
 
+ 
+var map;
+    function initMap() { 
+        var pos = {lat: 55.752042, lng:37.616608}; 
+        var pos1 = {lat: 55.682123, lng:37.433940};
+        var pos2 = {lat: 55.778889, lng:37.615263};
+        var pos3 = {lat: 55.743009, lng:37.658008};
+        var opt = {
+            center: pos,
+            zoom: 11,
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#bdbdbd"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.locality",
+                    "stylers": [
+                    {
+                        "lightness": 50
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.locality",
+                    "elementType": "labels",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.neighborhood",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "administrative.province",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "lightness": 20
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#dadada"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                    {
+                        "color": "#c9c9c9"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text",
+                    "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                    ]
+                }
+            ]
+        }
+        var myMap = new google.maps.Map(document.getElementById("map"), opt)
+        var mark1 = new google.maps.Marker({
+            position: pos1,
+            map: myMap,
+            title: "улица Правды дом 1",
+            icon: "images/map-icon.png"
+        })
+        var mark2 = new google.maps.Marker({
+            position: pos2,
+            map: myMap,
+            title: "улица Правды дом 1",
+            icon: "images/map-icon.png"
+        })
+        var mark3 = new google.maps.Marker({
+            position: pos3,
+            map: myMap,
+            title: "улица Правды дом 1" ,
+            icon: "images/map-icon.png"
+        })
+    }
+
+    // Loop through the results array and place a marker for each
+    // set of coordinates.
+    window.eqfeed_callback = function(results) {
+        for (var i = 0; i < results.features.length; i++) {
+        var coords = results.features[i].geometry.coordinates;
+        var latLng = new google.maps.LatLng(coords[1],coords[0]);
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+        });
+        }
+    }
+ 
 
 // Костыли
 
